@@ -404,20 +404,28 @@ function showAnswer(questionText, entryOverride) {
     // Resources
     resourceLinks.innerHTML = '';
     const res = [
-        { key: 'book1', label: 'Book 1', icon: '📚' },
-        { key: 'book2', label: 'Book 2', icon: '📚' },
-        { key: 'yt1', label: 'YouTube 1', icon: '📺' },
-        { key: 'yt2', label: 'YouTube 2', icon: '📺' }
+        { key: 'book1', label: 'Recommended Book', icon: '📚' },
+        { key: 'book2', label: 'Recommended Book', icon: '📚' },
+        { key: 'yt1', label: 'Watch on YouTube', icon: '📺' },
+        { key: 'yt2', label: 'Watch on YouTube', icon: '📺' }
     ];
     let hasRes = false;
     res.forEach(r => {
-        if (response[r.key]) {
-            const link = document.createElement('a');
-            link.href = response[r.key];
-            link.target = '_blank';
-            link.className = `resource-link ${r.key.startsWith('yt') ? 'yt' : ''}`;
-            link.innerHTML = `<span>${r.icon}</span> <span>${r.label}</span>`;
-            resourceLinks.appendChild(link);
+        const data = response[r.key];
+        if (data) {
+            const url = typeof data === 'string' ? data : data.url;
+            const title = typeof data === 'string' ? `Resource ${r.key.slice(-1)}` : data.title;
+
+            const linkWrap = document.createElement('div');
+            linkWrap.className = 'resource-item';
+            linkWrap.innerHTML = `
+                <span class="res-icon">${r.icon}</span>
+                <div class="res-content">
+                    <span class="res-label">${r.label}:</span>
+                    <a href="${url}" target="_blank" class="res-link">${title}</a>
+                </div>
+            `;
+            resourceLinks.appendChild(linkWrap);
             hasRes = true;
         }
     });

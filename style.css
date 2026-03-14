@@ -933,40 +933,55 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .resource-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-.resource-link {
+.resource-item {
     display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid var(--gunmetal-border);
-    border-radius: 6px;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: 8px;
+}
+
+.res-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.res-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.res-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: var(--gunmetal);
-    text-decoration: none;
-    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.res-link {
+    color: var(--gold);
+    text-decoration: underline;
+    font-size: 0.95rem;
     font-weight: 600;
     transition: all 0.2s;
+    line-height: 1.4;
+    word-break: break-word;
 }
 
-.resource-link:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: var(--gold);
+.res-link:hover {
     color: var(--white);
-}
-
-.resource-link.yt {
-    border-color: rgba(255, 0, 0, 0.2);
-}
-
-.resource-link.yt:hover {
-    background: rgba(255, 0, 0, 0.05);
-    border-color: #ff0000;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
 }
 
 /* ── BOOK LIST SCREEN ─────────────────────────────────────────── */
@@ -1067,10 +1082,17 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .rizz-card {
-    border-color: rgba(255, 0, 0, 0.2) !important;
+    border-color: rgba(255, 0, 0, 0.3);
+    background: rgba(255, 0, 0, 0.05);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
 }
 
 .rizz-card:hover {
-    border-color: #ff0000 !important;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+    border-color: #ff0000;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+}
+
+.rizz-card .q-num {
+    color: #ff0000;
+    font-weight: 800;
 }
