@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALPHA MALE AI</title>
+    <meta name="description"
+        content="Alpha Male AI — the masculine intelligence engine for purpose, relationships, and self-mastery.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+
+        <!-- ── GLOBAL NAV ──────────────────────────────────────────────── -->
+        <nav id="global-nav" class="global-nav hidden">
+            <button class="nav-btn active" data-screen="popular" id="nav-topics">TOPICS</button>
+            <button class="nav-btn" data-screen="chat" id="nav-ask">ASK AI</button>
+            <button class="nav-btn" data-screen="assessment" id="nav-assess">MY SCORE</button>
+        </nav>
+
+        <!-- ── SCREEN 1: ONBOARDING ─────────────────────────────────────── -->
+        <section id="onboarding" class="screen active">
+            <div class="container">
+                <h1 class="glitch">ALPHA MALE AI</h1>
+                <p class="subtitle">THE MASCULINE INTELLIGENCE ENGINE</p>
+                <form id="onboarding-form">
+                    <div class="form-row">
+                        <div class="form-group half">
+                            <label for="age">YOUR AGE</label>
+                            <input type="number" id="age" name="age" min="16" max="99" placeholder="e.g. 28" required>
+                        </div>
+                        <div class="form-group half">
+                            <label for="income">INCOME LEVEL</label>
+                            <select id="income" name="income" required>
+                                <option value="" disabled selected>SELECT</option>
+                                <option value="Low">LOW</option>
+                                <option value="Medium">MEDIUM</option>
+                                <option value="High">HIGH</option>
+                                <option value="Prefer not to say">PREFER NOT TO SAY</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dating_intent">WHAT ARE YOU LOOKING FOR?</label>
+                        <select id="dating_intent" name="dating_intent" required>
+                            <option value="" disabled selected>SELECT</option>
+                            <option value="Dating for Fun">JUST DATING / HAVING FUN</option>
+                            <option value="Seeking Marriage">LOOKING FOR A WIFE / SERIOUS PARTNER</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="relationship_frame">YOUR CURRENT SITUATION</label>
+                        <select id="relationship_frame" name="relationship_frame" required>
+                            <option value="Single">SINGLE</option>
+                            <option value="Relationship">IN A RELATIONSHIP</option>
+                            <option value="Breakup/Divorce">GOING THROUGH A BREAKUP OR DIVORCE</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fatherhood_context">YOUR FATHER SITUATION</label>
+                        <select id="fatherhood_context" name="fatherhood_context" required>
+                            <option value="Dad-Deprived">I GREW UP WITHOUT A FATHER</option>
+                            <option value="Dad-Enriched">I HAD A STRONG FATHER FIGURE</option>
+                            <option value="Current Father">I AM A FATHER</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">ENTER THE ARENA →</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ── SCREEN 2: POPULAR QUESTIONS ──────────────────────────────── -->
+        <section id="popular" class="screen">
+            <div class="popular-container">
+                <!-- Grid View -->
+                <div id="popular-grid-view">
+                    <div class="popular-header">
+                        <h2>CHOOSE YOUR TOPIC</h2>
+                        <p class="subtitle">TAP A QUESTION TO GET YOUR ANSWER</p>
+                    </div>
+                    <div id="question-grid" class="question-grid"></div>
+                </div>
+
+                <!-- Inline Answer View -->
+                <div id="popular-answer-view" class="hidden">
+                    <button id="back-to-grid" class="btn-back-inline">← BACK TO TOPICS</button>
+                    <div class="answer-panel">
+                        <p class="answer-label">THE TRUTH</p>
+                        <p id="ans-truth" class="ans-truth"></p>
+                        <p class="answer-label insight-label">DEEP INSIGHT</p>
+                        <p id="ans-insight" class="ans-body"></p>
+                        <p class="answer-label action-label">IMMEDIATE ACTION</p>
+                        <p id="ans-action" class="ans-body"></p>
+                        <p class="answer-label solution-label">FULL SOLUTION</p>
+                        <p id="ans-solution" class="ans-body"></p>
+                        <p id="ans-audit" class="ans-audit"></p>
+                    </div>
+
+                    <!-- Related Questions -->
+                    <div id="related-section" class="related-section">
+                        <p class="related-label">RELATED QUESTIONS</p>
+                        <div id="related-grid" class="related-grid"></div>
+                    </div>
+
+                    <div class="answer-actions">
+                        <button id="share-popular-answer" class="btn-share-big">SHARE THE TRUTH</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── SCREEN 3: CHAT ─────────────────────────────────────────── -->
+        <section id="chat" class="screen">
+            <div id="chat-history" class="chat-container">
+                <div class="message ai">
+                    <p class="truth">Ask anything. Use plain language — "I feel lost", "she ghosted me", "how do I build
+                        confidence", "I grew up without a father".</p>
+                </div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="user-input" placeholder="TYPE YOUR QUESTION...">
+                <button id="send-btn" class="btn-send">GO</button>
+            </div>
+        </section>
+
+        <!-- ── SCREEN 4: PURPOSE ASSESSMENT ─────────────────────────────── -->
+        <section id="assessment" class="screen">
+            <div class="container">
+                <h2 class="assess-title">PURPOSE ASSESSMENT</h2>
+                <p class="subtitle">ANSWER HONESTLY. YOUR SCORE REVEALS YOUR BASELINE.</p>
+
+                <div id="assessment-form" class="assessment-form">
+                    <div class="assess-question">
+                        <p class="qtext">1. Do you wake up with a clear reason to get out of bed?</p>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="q1" value="1"> Rarely — I dread the
+                                morning</label>
+                            <label class="radio-option"><input type="radio" name="q1" value="2"> Sometimes — depends on
+                                the day</label>
+                            <label class="radio-option"><input type="radio" name="q1" value="3"> Always — I have
+                                something to live for</label>
+                        </div>
+                    </div>
+                    <div class="assess-question">
+                        <p class="qtext">2. Can you describe your main life goal in one sentence?</p>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="q2" value="1"> No — I have no clear
+                                goal</label>
+                            <label class="radio-option"><input type="radio" name="q2" value="2"> Sort of — it's still
+                                vague</label>
+                            <label class="radio-option"><input type="radio" name="q2" value="3"> Yes — I know exactly
+                                what I'm building</label>
+                        </div>
+                    </div>
+                    <div class="assess-question">
+                        <p class="qtext">3. Do you spend time each day working toward a long-term goal?</p>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="q3" value="1"> No — I'm mostly
+                                reacting to life</label>
+                            <label class="radio-option"><input type="radio" name="q3" value="2"> Sometimes — when I feel
+                                motivated</label>
+                            <label class="radio-option"><input type="radio" name="q3" value="3"> Yes — I have a daily
+                                non-negotiable</label>
+                        </div>
+                    </div>
+                    <div class="assess-question">
+                        <p class="qtext">4. When things get hard, do you know what you're fighting for?</p>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="q4" value="1"> No — I usually want to
+                                quit</label>
+                            <label class="radio-option"><input type="radio" name="q4" value="2"> Sometimes — only if I
+                                remember</label>
+                            <label class="radio-option"><input type="radio" name="q4" value="3"> Yes — my why is crystal
+                                clear</label>
+                        </div>
+                    </div>
+                    <div class="assess-question">
+                        <p class="qtext">5. How often do you feel genuinely energised by what you do?</p>
+                        <div class="radio-group">
+                            <label class="radio-option"><input type="radio" name="q5" value="1"> Rarely — most things
+                                drain me</label>
+                            <label class="radio-option"><input type="radio" name="q5" value="2"> Sometimes — a few
+                                things spark me</label>
+                            <label class="radio-option"><input type="radio" name="q5" value="3"> Often — I'm doing what
+                                I'm built for</label>
+                        </div>
+                    </div>
+
+                    <p id="assess-error" class="assess-error hidden">Please answer all 5 questions.</p>
+                    <button id="calc-score-btn" class="btn-primary">CALCULATE MY PURPOSE SCORE →</button>
+                </div>
+
+                <!-- Inline Result (shown after calculation) -->
+                <div id="score-result" class="score-result hidden">
+                    <p class="result-label">YOUR PURPOSE SCORE</p>
+                    <div id="score-circle" class="score-circle">
+                        <span id="score-value">0</span>
+                        <span class="score-den">/10</span>
+                    </div>
+                    <p id="score-tier" class="score-tier"></p>
+                    <p id="score-message" class="score-message"></p>
+                    <button id="done-score-btn" class="btn-primary">BACK TO TOPICS →</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <canvas id="share-canvas" style="display:none;"></canvas>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
