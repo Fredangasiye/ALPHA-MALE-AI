@@ -13,6 +13,7 @@ const screens = {
     popular: document.getElementById('popular'),
     chat: document.getElementById('chat'),
     assessment: document.getElementById('assessment'),
+    books: document.getElementById('books'),
 };
 const globalNav = document.getElementById('global-nav');
 const onboardingForm = document.getElementById('onboarding-form');
@@ -22,8 +23,12 @@ const popularAnswerView = document.getElementById('popular-answer-view');
 const backToGrid = document.getElementById('back-to-grid');
 const ansTruth = document.getElementById('ans-truth');
 const ansInsight = document.getElementById('ans-insight');
-const ansAction = document.getElementById('ans-action');
+const ansActionList = document.getElementById('ans-action-list');
 const ansSolution = document.getElementById('ans-solution');
+const ansBiblical = document.getElementById('ans-biblical');
+const toggleBiblical = document.getElementById('toggle-biblical');
+const biblicalContent = document.getElementById('biblical-content');
+const resourceLinks = document.getElementById('resource-links');
 const ansAudit = document.getElementById('ans-audit');
 const relatedGrid = document.getElementById('related-grid');
 const sharePopularBtn = document.getElementById('share-popular-answer');
@@ -38,6 +43,7 @@ const scoreValue = document.getElementById('score-value');
 const scoreTier = document.getElementById('score-tier');
 const scoreMessage = document.getElementById('score-message');
 const doneScoreBtn = document.getElementById('done-score-btn');
+const bookListContainer = document.getElementById('book-list-container');
 
 let _lastTruth = '';
 
@@ -68,6 +74,9 @@ document.querySelectorAll('.nav-btn').forEach(btn => {
         if (target === 'popular') {
             popularAnswerView.classList.add('hidden');
             popularGridView.classList.remove('hidden');
+        }
+        if (target === 'books') {
+            buildBookList();
         }
         showScreen(target);
     });
@@ -312,6 +321,30 @@ function buildPopularQuestions() {
         grid.appendChild(card);
     });
 
+    // ── PURE RIZZ SECTION ─────────────────────────────────────────
+    const rizzEntries = QA_DATABASE.filter(e => e.category === 'rizz');
+    if (rizzEntries.length) {
+        const rizzHeader = document.createElement('div');
+        rizzHeader.className = 'rizz-section-header';
+        rizzHeader.innerHTML = `
+            <h2>PURE RIZZ</h2>
+            <p class="subtitle">FRAME, STATUS & ATTRACTION SECRETS</p>
+        `;
+        grid.appendChild(rizzHeader);
+
+        rizzEntries.forEach((e, i) => {
+            const card = document.createElement('div');
+            card.className = 'section-card rizz-card';
+            card.innerHTML = `
+                <button class="section-q-btn" data-question="${e.question.replace(/"/g, '&quot;')}">
+                    <span class="q-num">RIZZ ${String(i + 1).padStart(2, '0')}</span>
+                    <span>${e.question}</span>
+                </button>
+            `;
+            grid.appendChild(card);
+        });
+    }
+
     // Collapse/expand toggles
     grid.querySelectorAll('.section-card-toggle').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -343,10 +376,52 @@ function showAnswer(questionText, entryOverride) {
 
     ansTruth.textContent = response.truth;
     ansInsight.textContent = response.insight;
-    ansAction.textContent = response.action;
+
+    // Action List
+    ansActionList.innerHTML = '';
+    const actions = Array.isArray(response.action) ? response.action : (response.action || '').split('\n').filter(a => a.trim());
+    actions.forEach(a => {
+        const div = document.createElement('div');
+        div.className = 'action-item';
+        div.textContent = a.replace(/^\d+\.\s*/, '').replace(/^-\s*/, '');
+        ansActionList.appendChild(div);
+    });
+
     ansSolution.textContent = response.solution;
     ansAudit.textContent = audit;
     _lastTruth = response.truth;
+
+    // Biblical View
+    if (response.biblical) {
+        ansBiblical.textContent = response.biblical;
+        document.querySelector('.biblical-container').classList.remove('hidden');
+        biblicalContent.classList.add('hidden');
+        toggleBiblical.querySelector('.toggle-icon').textContent = '▾';
+    } else {
+        document.querySelector('.biblical-container').classList.add('hidden');
+    }
+
+    // Resources
+    resourceLinks.innerHTML = '';
+    const res = [
+        { key: 'book1', label: 'Book 1', icon: '📚' },
+        { key: 'book2', label: 'Book 2', icon: '📚' },
+        { key: 'yt1', label: 'YouTube 1', icon: '📺' },
+        { key: 'yt2', label: 'YouTube 2', icon: '📺' }
+    ];
+    let hasRes = false;
+    res.forEach(r => {
+        if (response[r.key]) {
+            const link = document.createElement('a');
+            link.href = response[r.key];
+            link.target = '_blank';
+            link.className = `resource-link ${r.key.startsWith('yt') ? 'yt' : ''}`;
+            link.innerHTML = `<span>${r.icon}</span> <span>${r.label}</span>`;
+            resourceLinks.appendChild(link);
+            hasRes = true;
+        }
+    });
+    document.querySelector('.resources-container').classList.toggle('hidden', !hasRes);
 
     // Build related questions
     relatedGrid.innerHTML = '';
@@ -379,6 +454,119 @@ backToGrid?.addEventListener('click', () => {
 });
 
 sharePopularBtn?.addEventListener('click', () => buildShareCard(_lastTruth));
+
+toggleBiblical?.addEventListener('click', () => {
+    const isHidden = biblicalContent.classList.toggle('hidden');
+    toggleBiblical.querySelector('.toggle-icon').textContent = isHidden ? '▾' : '▴';
+});
+
+// ══════════════════════════════════════════════════════════════════
+// BOOK LIST
+// ══════════════════════════════════════════════════════════════════
+const BOOK_DATA = [
+    {
+        category: "Personal Responsibility & Psychological Order",
+        desc: "These help people stabilize themselves before relationships.",
+        books: [
+            { title: "12 Rules for Life", author: "Jordan Peterson" },
+            { title: "Beyond Order: 12 More Rules for Life", author: "Jordan Peterson" },
+            { title: "Man's Search for Meaning", author: "Viktor Frankl" },
+            { title: "Atomic Habits", author: "James Clear" }
+        ]
+    },
+    {
+        category: "Trauma & Childhood Wounds",
+        desc: "These help users understand how early experiences shape adult relationships.",
+        books: [
+            { title: "What Happened to You?", author: "Bruce D. Perry & Oprah Winfrey" },
+            { title: "The Body Keeps the Score", author: "Bessel van der Kolk" },
+            { title: "Adult Children of Emotionally Immature Parents", author: "Lindsay C. Gibson" },
+            { title: "Running on Empty", author: "Jonice Webb" }
+        ]
+    },
+    {
+        category: "Attachment & Relationship Psychology",
+        desc: "These address why people struggle to connect safely.",
+        books: [
+            { title: "Attached", author: "Amir Levine & Rachel Heller" },
+            { title: "Hold Me Tight", author: "Sue Johnson" },
+            { title: "Getting the Love You Want", author: "Harville Hendrix" }
+        ]
+    },
+    {
+        category: "Fatherlessness & Family Breakdown",
+        desc: "Very important category for identity and security.",
+        books: [
+            { title: "Fatherless America", author: "David Blankenhorn" },
+            { title: "The Boy Crisis", author: "Warren Farrell & John Gray" },
+            { title: "Strong Fathers, Strong Daughters", author: "Meg Meeker" },
+            { title: "The Collapse of Parenting", author: "Leonard Sax" }
+        ]
+    },
+    {
+        category: "Boundaries & Emotional Health",
+        desc: "These teach personal responsibility in relationships.",
+        books: [
+            { title: "Boundaries", author: "Henry Cloud & John Townsend" },
+            { title: "Boundaries in Marriage", author: "Henry Cloud & John Townsend" },
+            { title: "The Courage to Be Disliked", author: "Ichiro Kishimi & Fumitake Koga" }
+        ]
+    },
+    {
+        category: "Masculinity & Male Development",
+        desc: "Important for addressing passivity and hidden resentment.",
+        books: [
+            { title: "Wild at Heart", author: "John Eldredge" },
+            { title: "King, Warrior, Magician, Lover", author: "Robert Moore & Douglas Gillette" },
+            { title: "No More Mr. Nice Guy", author: "Robert Glover" }
+        ]
+    },
+    {
+        category: "Christian Freedom & Inner Healing",
+        desc: "Serious Christian resources for spiritual identity.",
+        books: [
+            { title: "The Bondage Breaker", author: "Neil T. Anderson" },
+            { title: "Victory Over the Darkness", author: "Neil T. Anderson" },
+            { title: "Steps to Freedom in Christ", author: "Neil T. Anderson" },
+            { title: "Soul Care", author: "Rob Reimer" },
+            { title: "Healing the Wounded Heart", author: "Dan Allender" }
+        ]
+    },
+    {
+        category: "Hard Truth Relationship Books",
+        desc: "Brutally honest resources about marriage and wealth.",
+        books: [
+            { title: "The Seven Principles for Making Marriage Work", author: "John Gottman" },
+            { title: "Love and Respect", author: "Emerson Eggerichs" },
+            { title: "Sacred Marriage", author: "Gary Thomas" },
+            { title: "The Simple Path to Wealth", author: "JL Collins" },
+            { title: "The Millionaire Next Door", author: "Thomas J. Stanley" },
+            { title: "The Psychology of Money", author: "Morgan Housel" },
+            { title: "Rich Dad Poor Dad", author: "Robert Kiyosaki" }
+        ]
+    }
+];
+
+function buildBookList() {
+    bookListContainer.innerHTML = '';
+    BOOK_DATA.forEach(cat => {
+        const catDiv = document.createElement('div');
+        catDiv.className = 'book-category';
+        catDiv.innerHTML = `
+            <h3>${cat.category}</h3>
+            <p class="book-category-desc">${cat.desc}</p>
+            <div class="book-grid">
+                ${cat.books.map(b => `
+                    <div class="book-card">
+                        <span class="book-title">${b.title}</span>
+                        <span class="book-author">${b.author}</span>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        bookListContainer.appendChild(catDiv);
+    });
+}
 
 // ══════════════════════════════════════════════════════════════════
 // CHAT

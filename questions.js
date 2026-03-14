@@ -1,440 +1,2540 @@
 export const CATEGORIES = [
-    { id: 'purpose', label: 'PURPOSE & MISSION', icon: '🎯' },
-    { id: 'mental-health', label: 'MENTAL HEALTH', icon: '🧠' },
-    { id: 'fatherhood', label: 'FATHERHOOD & FAMILY', icon: '👨‍👦' },
-    { id: 'alpha-mindset', label: 'ALPHA MINDSET', icon: '🛡️' },
-    { id: 'attraction', label: 'ATTRACTION & SEDUCTION', icon: '🔥' },
-    { id: 'dating', label: 'DATING STRATEGY', icon: '📱' },
-    { id: 'breakups', label: 'BREAKUPS & EXES', icon: '💔' },
-    { id: 'relationships', label: 'RELATIONSHIPS', icon: '💍' },
-    { id: 'social', label: 'SOCIAL LIFE & RESPECT', icon: '🤝' },
-    { id: 'sacrifice', label: 'HEROISM & SACRIFICE', icon: '⚔️' },
-    { id: 'finance', label: 'FINANCE & WEALTH', icon: '💰' },
-    { id: 'health', label: 'HEALTH & SELF-MASTERY', icon: '💪' },
+    {
+        "id": "purpose",
+        "label": "🎯 Purpose & Mission",
+        "icon": "🎯"
+    },
+    {
+        "id": "mental",
+        "label": "🧠 Mental Health",
+        "icon": "🧠"
+    },
+    {
+        "id": "fatherhood",
+        "label": "👨‍👦 Fatherhood & Family",
+        "icon": "👨‍👦"
+    },
+    {
+        "id": "alpha",
+        "label": "🛡️ Alpha Mindset",
+        "icon": "🛡️"
+    },
+    {
+        "id": "attraction",
+        "label": "🔥 Attraction & Seduction",
+        "icon": "🔥"
+    },
+    {
+        "id": "dating",
+        "label": "📱 Dating Strategy",
+        "icon": "📱"
+    },
+    {
+        "id": "breakups",
+        "label": "💔 Breakups & Exes",
+        "icon": "💔"
+    },
+    {
+        "id": "relationships",
+        "label": "💍 Relationships",
+        "icon": "💍"
+    },
+    {
+        "id": "social",
+        "label": "🤝 Social Life & Respect",
+        "icon": "🤝"
+    },
+    {
+        "id": "sacrifice",
+        "label": "⚔️ Heroism & Sacrifice",
+        "icon": "⚔️"
+    },
+    {
+        "id": "finance",
+        "label": "💰 Finance & Wealth",
+        "icon": "💰"
+    },
+    {
+        "id": "health",
+        "label": "💪 Health & Self-Mastery",
+        "icon": "💪"
+    },
+    {
+        "id": "rizz",
+        "label": "🔥 Pure Rizz",
+        "icon": "🔥"
+    }
 ];
 
 export const QA_DATABASE = [
-
-    // ── PURPOSE & MISSION ──────────────────────────────────────────
     {
-        id: 'p1', category: 'purpose',
-        question: "I feel lost. I have no direction in life.",
-        keywords: ['lost', 'no direction', 'purpose', 'void', 'empty', 'aimless', 'no goal', 'drifting'],
-        truth: "Living without direction is not a personal failure — it is what happens when the old reasons to get out of bed are gone and no new mission has been chosen.",
-        insight: "Men historically anchored identity to a clear role. When that role disappears and nothing replaces it, the mind turns inward and attacks itself. Depression, addiction, and stagnation all share one root: no compelling reason to fight. The Japanese call a reason for being 'ikigai.' Without it, men die younger, get sick faster, and give up sooner. Purpose is not optional — it is a survival requirement.",
-        action: "Ask yourself one honest question: 'What would I be willing to sacrifice sleep for?' Write down three answers. That is your raw material. Start the smallest possible version of that mission today. Purpose does not appear before you begin — it appears because you began.",
-        solution: "Build your mission in stages. In your 20s: develop a marketable skill and save money aggressively. In your 30s: transition from job to vocation by working on your passion before 6am and after 9pm. Never quit your income source until your mission pays. The path to purpose runs through discipline, not inspiration.",
-        related: ["How do I find my purpose in life?", "I have a failure to launch problem", "How do I stop being lazy?", "I feel depressed and hopeless", "How do I become a high-value man?"]
+        "id": "rizz_01",
+        "category": "rizz",
+        "question": "Why do women immediately say 'I have a boyfriend' when I approach?",
+        "keywords": [
+            "women",
+            "immediately",
+            "have",
+            "boyfriend'",
+            "when",
+            "approach"
+        ],
+        "truth": "It’s a 'Shield' used to filter out low-value, low-status men who don't have the 'Level' to be there.",
+        "insight": "If a woman says this without making eye contact, she is dismissing you as a '6:30' (lower status).",
+        "action": [
+            "Practice approaching and walking away instantly.",
+            "Check your posture.",
+            "Improve your 'Level'.",
+            "Do not try to 'convince' her.",
+            "Record your approach voice."
+        ],
+        "solution": "'Rizz' isn't about the perfect line; it’s about 'Status Entitlement.'",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron, and one man sharpens another.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'p2', category: 'purpose',
-        question: "How do I find my purpose in life?",
-        keywords: ['find purpose', 'calling', 'ikigai', 'passion', 'what am i meant to do', 'life meaning'],
-        truth: "Your purpose lives at the intersection of what you are built for, what the world needs, and what you are willing to suffer for.",
-        insight: "Many men sacrificed the thing they loved — the activity that made them lose track of time — in order to survive. Your job is different: you must find that thing and build a life around it. The hard reality is that pursuing your passion is a toll road. The more fulfilling the occupation, the more people want it, so it often pays least at first. You will likely need to fund your passion with disciplined income for years. That is not a reason to avoid it — that is the reality of the road.",
-        action: "Do the 'lost time' exercise: recall three moments in your life when you were so absorbed in something that hours passed without you noticing. Write them down. That is where your purpose lives. Now ask: what problem in the world connects to those moments? Begin building toward that intersection for one hour per day.",
-        solution: "Work backwards from the life you want at 45. Write it in detail — where you live, what you do, who you serve, how you feel. Then ask: what decisions does the 25-year-old version of you need to make right now to become that man? Make those decisions today.",
-        related: ["I feel lost. I have no direction in life.", "I have a failure to launch problem", "How do I become financially independent?", "How do I build a masculine frame?", "How do I become a high-value man?"]
+        "id": "rizz_02",
+        "category": "rizz",
+        "question": "Why should I never give a woman a compliment in the first 5 minutes?",
+        "keywords": [
+            "should",
+            "never",
+            "give",
+            "woman",
+            "compliment",
+            "first",
+            "minutes"
+        ],
+        "truth": "Compliments are 'Social Bribes' that tell her you are trying to buy her attention.",
+        "insight": "High-value women get complimented 50 times a day. When you do it, you become 'Fan #51.'",
+        "action": [
+            "Go 24 hours without physical compliments.",
+            "Practice 'Active Ignoring'.",
+            "Compliment a choice, not genetics.",
+            "Maintain eye contact.",
+            "Use a 'playful tease' instead."
+        ],
+        "solution": "To have real 'Swagger,' you must be the 'Awarder' of validation, not the seeker of it.",
+        "biblical": "Proverbs 27:21 - 'The crucible is for silver, and the furnace is for gold, and a man is tested by his praise.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'p3', category: 'purpose',
-        question: "I have a failure to launch problem. I can't seem to get started.",
-        keywords: ['failure to launch', 'procrastinate', 'lazy', 'stuck', 'cant start', 'unmotivated', 'going nowhere', 'stagnant'],
-        truth: "Failure to launch is not laziness — it is purpose deprivation combined with no skin in the game.",
-        insight: "'Failure to launch' happens in two stages: first, the loss of purpose — no mission. Second, the collapse of discipline — no structure. Video games, porn, and social media are sophisticated purpose substitutes that deliver the feeling of progress and reward with no real stakes. Your brain is not broken. It is responding rationally to an environment built to trap you. The solution is not willpower — it is raising the stakes. A man with something to lose fights harder than a man with nothing at risk.",
-        action: "Use the skin-in-the-game method: commit publicly to one specific goal with a concrete deadline. Tell people. Put money on it. Make failure embarrassing. Then remove escape hatches — delete games, block distractions during work hours. Build a daily non-negotiable: one hour of mission work before you check your phone.",
-        solution: "Run a 90-day boot camp on yourself. Three daily musts: 1) Work on one skill for 60 minutes. 2) Exercise for 30 minutes. 3) Eliminate one time-wasting habit. Track and review weekly. In 90 days, you will not recognise yourself — but only if you start today, not Monday.",
-        related: ["I feel lost. I have no direction in life.", "How do I build discipline?", "How do I stop watching porn?", "How do I build confidence?", "How do I become financially independent?"]
+        "id": "rizz_03",
+        "category": "rizz",
+        "question": "How do I escape the 'Friend Zone' immediately?",
+        "keywords": [
+            "escape",
+            "'friend",
+            "zone'",
+            "immediately"
+        ],
+        "truth": "You aren't in the Friend Zone; you are in the 'Gay Male Girlfriend' zone.",
+        "insight": "The Friend Zone is a place where men trade time for the hope of future sex. It is a dishonest contract.",
+        "action": [
+            "Stop emotional support texting.",
+            "Ask her out on a direct 'Date'.",
+            "If she says 'friendship', walk away.",
+            "Remove her from priority list.",
+            "Date someone else and post it."
+        ],
+        "solution": "To exit the Friend Zone, you must be willing to lose the relationship entirely.",
+        "biblical": "Matthew 5:37 - 'Let your 'Yes' be 'Yes,' and your 'No,' 'No.''",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'p4', category: 'purpose',
-        question: "How do I build discipline when I have none?",
-        keywords: ['discipline', 'self control', 'routine', 'lazy', 'build habits', 'consistency', 'follow through', 'no willpower'],
-        truth: "Discipline is not a personality trait — it is a muscle built by starting with something so small it cannot be refused.",
-        insight: "Men who try to build discipline through willpower alone fail because willpower depletes like a battery. Real discipline is built through systems and environment design, not raw mental force. The man who keeps a consistent sleep schedule, removes temptations from his environment, and tracks his behaviour daily builds an unfair advantage over the man who relies on motivation to show up. Motivation is a visitor. Discipline is a resident.",
-        action: "Start with the 2-Minute Rule: every habit you want to build, reduce it to a 2-minute version and do it daily. Want to go to the gym? Just put on your gym clothes. Want to read? Open the book. The action of starting is the discipline. Everything after that is momentum.",
-        solution: "Build an environment that makes discipline automatic: 1) Set a fixed wake time — non-negotiable. 2) Lay your gym kit out the night before. 3) Remove your phone from your bedroom. 4) Batch your hardest task first each morning before your brain is loud. 5) Track a streak. Missing once is a mistake. Missing twice is the start of a habit.",
-        related: ["I have a failure to launch problem", "How do I find my purpose in life?", "How do I stop being lazy?", "I feel lost. I have no direction in life.", "How do I build confidence?"]
+        "id": "rizz_04",
+        "category": "rizz",
+        "question": "The 6:25 vs 6:30 Status Rule",
+        "keywords": [
+            "6:25",
+            "6:30",
+            "status",
+            "rule"
+        ],
+        "truth": "If she views you as '6:30' (lower status), she has no biological reason to be loyal.",
+        "insight": "Attraction is not a choice; it is a response to status.",
+        "action": [
+            "Assess your 'Status Markers'.",
+            "Stop submissive approaches.",
+            "Focus 80% on status, 20% on Rizz.",
+            "Record your voice.",
+            "Walk with entitlement posture."
+        ],
+        "solution": "'Rizz' is the external manifestation of internal status.",
+        "biblical": "Matthew 5:14 - 'A city set on a hill cannot be hidden.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'p5', category: 'purpose',
-        question: "How do I stop being lazy?",
-        keywords: ['lazy', 'unmotivated', 'no energy', 'cant get up', 'sluggish', 'apathetic', 'no drive', 'do nothing all day'],
-        truth: "Laziness is almost always a symptom of either a purpose void, a health issue, or a dopamine system hijacked by instant gratification.",
-        insight: "A man who genuinely has something to fight for rarely struggles with laziness. The man who rolls out of bed without hesitation is the man who went to sleep with a clear reason to wake up. If you are lazy, the first question is not 'how do I push myself harder?' It is 'do I have a compelling reason to move?' Laziness can also be a medical symptom — poor sleep, low testosterone, poor nutrition, and depression all produce identical behaviour to what we call laziness.",
-        action: "This week: fix your sleep first. Seven hours minimum, same time every night. Then fix your nutrition — remove processed food for 14 days and notice the energy shift. Then find your first mission objective and put it on a board where you can see it every morning.",
-        solution: "Replace the identity of 'lazy person' with 'man in training.' Every action that contradicts laziness — no matter how small — is evidence of the man you are becoming. Build on that evidence. Add one hard thing per week. After 30 days, the identity has started to shift.",
-        related: ["I have a failure to launch problem", "How do I build discipline when I have none?", "I feel lost. I have no direction in life.", "How do I stop watching porn?", "Why do men die younger and how do I live longer?"]
+        "id": "rizz_05",
+        "category": "rizz",
+        "question": "Eye Contact: The 'Look Away Last' Rule",
+        "keywords": [
+            "contact:",
+            "'look",
+            "away",
+            "last'",
+            "rule"
+        ],
+        "truth": "The man who looks away first is the one who is seeking approval.",
+        "insight": "Eye contact is the first 'Shit Test'. Looking away signals you are 'Status Deprived'.",
+        "action": [
+            "Hold eye contact until they look away.",
+            "Hold for 3 seconds with a smirk.",
+            "Never look down.",
+            "Use 'Grounded Gazing'.",
+            "Practice in a mirror."
+        ],
+        "solution": "Holding eye contact is a demonstration of 'Frame'.",
+        "biblical": "Proverbs 4:25 - 'Let your eyes look straight ahead; fix your gaze directly before you.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'p6', category: 'purpose',
-        question: "I feel like a failure. How do I reset?",
-        keywords: ['failure', 'feel like a failure', 'reset', 'start over', 'rock bottom', 'gave up', 'messed up', 'setback'],
-        truth: "Rock bottom is not the end — it is the cleanest foundation a man will ever have to build from.",
-        insight: "Every man who built something remarkable failed — catastrophically and repeatedly — before they did. The difference between men who recover and men who don't is not talent or luck. It is whether they treat failure as data or as identity. When you call yourself a failure, you have confused an event with a label. The event happened. The label you are free to reject. Every comeback story starts with a man who decided: this is not who I am.",
-        action: "Write down three things the failure taught you that success could not have. Then write one action you can take this week that would make the version of you who failed proud. Do it.",
-        solution: "The reset framework: 1) Grieve what you lost — one day, not one month. 2) Assess what actually went wrong without ego. 3) Identify the one decision that, if made differently, changes everything. 4) Make that decision today in a new context. 5) Build momentum with a 30-day streak of one small daily action.",
-        related: ["I feel lost. I have no direction in life.", "I feel depressed and hopeless", "How do I build discipline when I have none?", "I have a failure to launch problem", "How do I get my confidence back after a setback?"]
+        "id": "rizz_06",
+        "category": "rizz",
+        "question": "How do I handle a 'Shit Test' like a King?",
+        "keywords": [
+            "handle",
+            "'shit",
+            "test'",
+            "like",
+            "king"
+        ],
+        "truth": "A 'Shit Test' is an invitation to prove your 'Frame' is unbreakable.",
+        "insight": "Women test men to see if they are a '6:30' or a '6:25'.",
+        "action": [
+            "Identify defensive reactions.",
+            "Practice 'Agree and Amplify'.",
+            "Never explain yourself.",
+            "Maintain a 'smirk'.",
+            "Walk away if disrespectful."
+        ],
+        "solution": "A 'Shit Test' is a biological filter. Remain the 'Rock'.",
+        "biblical": "Proverbs 15:1 - 'A gentle answer turns away wrath, but a harsh word stirs up anger.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'p7', category: 'purpose',
-        question: "How do I stay motivated long term?",
-        keywords: ['stay motivated', 'long term motivation', 'keep going', 'give up', 'lose motivation', 'consistency'],
-        truth: "Motivation is temporary. Systems are permanent. Build systems, not moods.",
-        insight: "Motivation comes in waves — it peaks when you start something new and crashes when the novelty wears off. The men who actually change their lives are not more motivated than average — they have built structures that carry them when motivation is gone. They have accountability, fixed schedules, environments free of distraction, and a mission large enough that quitting feels more painful than continuing.",
-        action: "Write down your mission in one sentence and put it somewhere you cannot avoid seeing it. Read it every morning before you look at your phone. Every decision you make today either moves toward or away from that sentence.",
-        solution: "Replace motivation with identity: instead of 'I am trying to get fit,' say 'I am a man who trains.' Instead of 'I am trying to save money,' say 'I am a man who invests in his future.' Identity-based behaviour outlasts motivation-based behaviour every time. Choose the identity before the results arrive.",
-        related: ["How do I build discipline when I have none?", "I have a failure to launch problem", "How do I find my purpose in life?", "I feel like a failure. How do I reset?", "How do I become a high-value man?"]
-    },
-
-    // ── MENTAL HEALTH ──────────────────────────────────────────────
-    {
-        id: 'mh1', category: 'mental-health',
-        question: "I feel depressed and hopeless.",
-        keywords: ['depressed', 'depression', 'hopeless', 'dark', 'no hope', 'worthless', 'sad', 'miserable', 'giving up', 'cant go on'],
-        truth: "Men's depression is a crisis hidden behind silence. Between ages 20–24, men take their own lives at five to six times the rate of women. This is not weakness — it is what happens when a man has no mission and no community.",
-        insight: "Male depression runs on two engines: 'If no human doing, no human being' — men tie identity to function. When they cannot perform — at work, in relationships, in life — their sense of existence collapses. The second engine is isolation. Depressed men comply with the social pressure to say 'I'm fine,' and that silence is lethal. A third engine is the purpose void: when a man has nothing larger than himself to fight for, his mind turns inward and attacks itself.",
-        action: "Break the silence first. Find one man you trust and say: 'I am not okay.' If no one is available, call a crisis line as a starting point, not an ending. Then build one small structure into tomorrow: wake at the same time, eat a real meal, go outside for 20 minutes. Momentum is built from micro-actions. Depression lies about the future. Do not make permanent decisions in temporary pain.",
-        solution: "Three reversals: 1) Reconnect with purpose — even a tiny mission breaks the 'no doing' loop. 2) Physical intervention — consistent exercise rivals medication for mild-to-moderate depression. 3) Social rebuilding — find a men's group, sports league, or any regular contact with men committed to growth.",
-        related: ["I feel lost. I have no direction in life.", "I have suicidal thoughts", "I feel like a failure. How do I reset?", "I have no friends or social life", "How do I build discipline when I have none?"]
-    },
-    {
-        id: 'mh2', category: 'mental-health',
-        question: "I have suicidal thoughts. I don't see a way out.",
-        keywords: ['suicide', 'suicidal', 'want to die', 'end it', 'no point', 'kill myself', 'not worth living', 'disappear'],
-        truth: "You are in a crisis. This is a medical emergency. Call for help now: South Africa: SADAG 0800 456 789. USA: 988. UK: 116 123.",
-        insight: "Suicidal risk is highest when three things meet: a purpose void, social isolation, and acute shame — feeling like a burden or a failure. All three are reversible. Men are three to four times more likely to complete suicide partly because they choose more lethal methods and are less likely to seek help. Your pain is real. But pain is temporary. The void you feel is the symptom of a solvable problem — not a verdict on your life.",
-        action: "Do not be alone tonight. Tell one person where you are. If you have a plan, remove access to the means. Call a helpline right now — not because they will fix everything, but because the next step is staying alive until tomorrow.",
-        solution: "After the crisis: build a safety plan with a professional. Identify your warning signs, your coping actions, your support people, and — however small — your reasons to live. Most people who survive a crisis go on to say the thing they thought was permanent was temporary, and the life they built after was not possible any other way.",
-        related: ["I feel depressed and hopeless", "I feel lost. I have no direction in life.", "I feel like a failure. How do I reset?", "I have no friends or social life"]
+        "id": "rizz_07",
+        "category": "rizz",
+        "question": "Outcome Independence: The Power of Walking Away",
+        "keywords": [
+            "outcome",
+            "independence:",
+            "power",
+            "walking",
+            "away"
+        ],
+        "truth": "The most powerful 'Rizz' you have is the ability to walk away and never look back.",
+        "insight": "Women detect 'Neediness'. Outcome independence makes you the 'King'.",
+        "action": [
+            "Practice being detached on dates.",
+            "Respond with 'OK' to flakes.",
+            "Delete lukewarm contacts.",
+            "Spend Friday night on purpose.",
+            "Practice the 'Takeaway'."
+        ],
+        "solution": "'Outcome Independence' is the foundation of the 'Red Pill' lifestyle.",
+        "biblical": "Matthew 10:14 - 'If anyone will not welcome you... shake the dust off your feet.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'mh3', category: 'mental-health',
-        question: "How do I deal with anxiety?",
-        keywords: ['anxiety', 'anxious', 'panic', 'worried', 'fear', 'nervous', 'overthinking', 'social anxiety', 'stressed'],
-        truth: "Anxiety is your nervous system preparing you for a threat. For most modern men, the threat is imagined — but the physiological response is identical to real danger.",
-        insight: "Chronic anxiety in men is often under-identified because men mask it with aggression, overwork, substances, or social withdrawal. Anxiety feeds on uncertainty and avoidance. The more you avoid the thing that triggers fear, the more your brain labels it as dangerous. The relief of avoidance is the trap — every time you avoid, you teach your brain that the thing was genuinely threatening.",
-        action: "Start with the 'name it to tame it' technique: when anxiety spikes, say out loud or write down exactly what you are afraid of. Specificity deflates anxiety. Vague dread is most powerful. Then take one action — however small — toward the feared thing. Action is the antidote to anxiety.",
-        solution: "Long-term: controlled exposure — gradually and systematically face the situations that trigger anxiety. Exercise daily — it metabolises stress hormones. Limit caffeine, alcohol, and screen time before bed. Build a consistent sleep schedule. Breathe: 4 seconds in, hold 4, out 6. Repeat five times when a spike hits.",
-        related: ["I feel depressed and hopeless", "I am socially anxious. How do I fix it?", "How do I build confidence?", "How do I stop overthinking?", "I have no friends or social life"]
+        "id": "rizz_10",
+        "category": "rizz",
+        "question": "How do I handle it when she says she has an 'Ex-Boyfriend' she's still talking to?",
+        "keywords": [
+            "handle",
+            "when",
+            "says",
+            "'ex-boyfriend'",
+            "she's",
+            "still",
+            "talking"
+        ],
+        "truth": "She is telling you that you are her 'Side Option' or 'Emotional Support Tool'.",
+        "insight": "If she's talking about an ex, she is not '100' into you. You are in the 'Beta' category.",
+        "action": [
+            "Stop romantic pursuit immediately.",
+            "Do not ask questions about the ex.",
+            "Refuse to be her therapist.",
+            "Date two other women this week.",
+            "Keep your frame on the present."
+        ],
+        "solution": "A '6:25' man would never tolerate being in a competition with a ghost.",
+        "biblical": "Matthew 6:24 - 'No one can serve two masters.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'mh4', category: 'mental-health',
-        question: "How do I stop overthinking?",
-        keywords: ['overthinking', 'ruminating', 'in my head', 'cant stop thinking', 'spiral', 'overanalyse', 'stuck in thoughts'],
-        truth: "Overthinking is not a sign of intelligence — it is a sign that your mind has too much unstructured time and no current action to focus on.",
-        insight: "The brain would rather simulate 1,000 futures than be still. Without a mission to focus on, mental energy has nowhere to go except inward — replaying past events, simulating worst-case scenarios, and searching for certainty in situations that are fundamentally uncertain. Overthinking is a substitute for action. It gives the feeling of doing something without the risk of actually doing it.",
-        action: "When you catch yourself in a thought spiral, interrupt it with a physical action: do 20 push-ups, go for a 10-minute walk, call someone. The nervous system cannot be anxious and physically active at the same time. Then ask: 'Is there one action I can take on this situation right now?' If yes, take it. If no, schedule a time to revisit it and stop thinking about it until then.",
-        solution: "Build a 'clear head' practice: every morning write three things — what you are worried about, one action you will take on each, and the single most important thing to accomplish today. This offloads the mental cache. You no longer need to keep those thoughts spinning because they are on paper.",
-        related: ["How do I deal with anxiety?", "I feel depressed and hopeless", "How do I build discipline when I have none?", "How do I build confidence?", "I feel lost. I have no direction in life."]
+        "id": "rizz_11",
+        "category": "rizz",
+        "question": "Why is being 'Direct' the only way to avoid the Friend Zone?",
+        "keywords": [
+            "being",
+            "'direct'",
+            "only",
+            "avoid",
+            "friend",
+            "zone"
+        ],
+        "truth": "'Politeness' is often just a mask for 'Cowardice.'",
+        "insight": "The Friend Zone is built on 'Social Bribes'. 'Man Psychology' requires you to be '100'.",
+        "action": [
+            "Ask her out on a 'Romantic Date' today.",
+            "If she says 'friends', stop contact.",
+            "Eliminate 'Passive Language'.",
+            "Use 'Entitlement Posture'.",
+            "List the costs of the Friend Zone."
+        ],
+        "solution": "Being direct is a 'Status Marker'. Only high-status men feel entitled to be honest.",
+        "biblical": "Matthew 5:37 - 'Let your 'Yes' be 'Yes,' and your 'No,' 'No.''",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'mh5', category: 'mental-health',
-        question: "How do I deal with anger and aggression?",
-        keywords: ['anger', 'rage', 'aggressive', 'violent', 'temper', 'explosive', 'controlling', 'anger issues', 'angry all the time'],
-        truth: "Anger is not the problem — unexpressed pain and unmet standards are the problem. Anger is just the alarm.",
-        insight: "Men are socialised to express emotion as anger because it is the one emotion that does not make them appear weak. So grief becomes rage, fear becomes aggression, and loneliness becomes hostility. Chronic anger is almost always about something underneath: feeling disrespected, feeling helpless, feeling like your standards are being violated with no remedy. The man who can identify what is actually wrong — underneath the anger — is the man who starts to solve it.",
-        action: "When you feel anger rising: pause before you respond. Leave the room if you need to. Ask: 'What is actually happening here? What do I feel underneath the anger?' Write it down. Address the real issue — the anger was just the signal.",
-        solution: "Channel anger strategically: 1) Hard physical training metabolises the hormonal state. 2) Journalling at the end of each day catches the small resentments before they compound. 3) Learn to say clearly what a standard is and what the consequence of violating it is — this gives anger a productive outlet rather than an explosive one.",
-        related: ["How do I deal with anxiety?", "I feel depressed and hopeless", "How do I build a masculine frame?", "How do I stop overthinking?", "How do I build discipline when I have none?"]
-    },
-
-    // ── FATHERHOOD & FAMILY ────────────────────────────────────────
-    {
-        id: 'f1', category: 'fatherhood',
-        question: "I grew up without a father. How does that affect me?",
-        keywords: ['no father', 'fatherless', 'dad left', 'absent father', 'grew up without dad', 'single mother', 'no male role model', 'abandoned'],
-        truth: "Growing up without a father is the single most significant predictor of every major negative male outcome — and it is not your fault.",
-        insight: "Boys raised without fathers are statistically more likely to drop out of school, commit crimes, struggle with mental health, be recruited into gangs, and repeat the cycle by becoming absent fathers themselves. The cycle goes: fatherlessness → poor education → unemployment → social isolation → more fatherless children. Understanding the cycle is the first step to breaking it. The absence of a father does not determine a man's destiny — it is his resistance training.",
-        action: "Consciously seek father-figure energy: mentors, coaches, older men of character, communities of men who hold each other accountable. Study the men you admire. You are not building from zero — you are building from pain, which is often a stronger foundation.",
-        solution: "Commit to being the man who breaks the cycle. Choose presence over provision. Build something your children and community will benefit from for generations. The boy who grows up to become the mentor he never had is living at the highest expression of masculine purpose.",
-        related: ["How do I be a good father?", "I feel depressed and hopeless", "I feel lost. I have no direction in life.", "How do I build a masculine frame?", "How do I break generational cycles?"]
-    },
-    {
-        id: 'f2', category: 'fatherhood',
-        question: "How do I be a good father?",
-        keywords: ['good father', 'fatherhood', 'raise son', 'father role', 'be a dad', 'parenting', 'son growing up', 'raise children'],
-        truth: "The most powerful thing you will ever give your children is your consistent, present, phone-free attention.",
-        insight: "What fathers provide that is irreplaceable: boundary enforcement — holding the line when sons push it. Risk encouragement — pushing sons past their comfort zone rather than rescuing them from it. Emotional regulation through roughhousing — physical play that teaches boys to manage impulses. Teachable moments — using small pain now to build resilience for bigger challenges later. Challenging limits — believing the son can do more than he thinks. One parent raising a child alone, no matter how dedicated, is missing half of what a child needs.",
-        action: "Start with five minutes per day of completely uninterrupted, phone-free time with your child. No agenda. Just presence. Then build from there. Implement a family dinner night — five real conversations a week are worth more than any other investment in your family.",
-        solution: "Protect the child's relationship with both parents regardless of your personal feelings about the other. If you are single, build a village: find male mentors, coaches, older relatives. A boy needs multiple mirrors of what a man can be — not just one.",
-        related: ["I grew up without a father. How does that affect me?", "How do I build a masculine frame?", "What does it mean to be an alpha male?", "How do I raise a strong son?", "How do I break generational cycles?"]
+        "id": "rizz_12",
+        "category": "rizz",
+        "question": "Why do women lose respect for the 'Nice Guy'?",
+        "keywords": [
+            "women",
+            "lose",
+            "respect",
+            "'nice",
+            "guy'"
+        ],
+        "truth": "Because 'Nice' is usually a manipulative contract.",
+        "insight": "Women have a radar for 'Covert Contracts'. Niceness signals 'Scarcity'.",
+        "action": [
+            "Disagree with a woman today.",
+            "Stop apologizing for taking up space.",
+            "Don't pay until she shows respect.",
+            "No emojis for 24 hours.",
+            "Say 'No' to inconvenient requests."
+        ],
+        "solution": "The 'Nice Guy' is trapped in 'Boy Psychology'.",
+        "biblical": "Proverbs 25:26 - 'Like a muddied spring... are the righteous who give way.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'f3', category: 'fatherhood',
-        question: "How do I raise a strong son?",
-        keywords: ['raise son', 'strong son', 'raising boys', 'son growing up', 'masculine boy', 'teach son', 'young man', 'teenage son'],
-        truth: "A strong son is built by a father who shows him — not tells him — what a man looks like.",
-        insight: "Boys learn masculinity by watching men, not by being lectured at. A son absorbs your relationship with work, with stress, with women, with your word, and with your own body. If you are disciplined, he will be disciplined. If you are dishonest, he will be dishonest. If you quit when things get hard, he will quit when things get hard. The most powerful parenting you will ever do is who you are when you think nobody is watching — because he always is.",
-        action: "Give your son controlled challenges — situations where he can fail, learn, and recover with you nearby but not intervening. Resist the urge to rescue. Encourage him to try things that scare him. Celebrate effort more than outcome. This builds the internal confidence that external praise cannot.",
-        solution: "Teach him the four fundamentals early: 1) Keep your word. 2) Earn what you have. 3) Be honest even when it costs you. 4) Protect those weaker than you. Everything else is a variation of these four.",
-        related: ["How do I be a good father?", "I grew up without a father. How does that affect me?", "What does it mean to be an alpha male?", "How do I build a masculine frame?", "How do I build discipline when I have none?"]
+        "id": "rizz_13",
+        "category": "rizz",
+        "question": "How do I handle a woman who flakes or cancels a date?",
+        "keywords": [
+            "handle",
+            "woman",
+            "flakes",
+            "cancels",
+            "date"
+        ],
+        "truth": "A flake is a massive disrespect of your time.",
+        "insight": "If she viewed you as high-status, she would crawl over broken glass to make it.",
+        "action": [
+            "Say 'Okay, cool' and never text again.",
+            "Do not ask 'Why?'.",
+            "Do not accept a 'Maybe' date.",
+            "Make other plans immediately.",
+            "Wait 24h to respond if she texts later."
+        ],
+        "solution": "High-value Kings are 'Detached'. Your time is valuable.",
+        "biblical": "Matthew 7:6 - 'Do not give dogs what is sacred; do not throw your pearls to pigs.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'f4', category: 'fatherhood',
-        question: "How do I break generational cycles of dysfunction?",
-        keywords: ['generational cycle', 'family trauma', 'break cycle', 'toxic family', 'generational trauma', 'repeat patterns', 'family dysfunction'],
-        truth: "You cannot change what happened to you — but you are the first man in your line who gets to choose what happens next.",
-        insight: "Generational cycles persist because pain, when unexamined, becomes pattern. The man who grew up in chaos creates chaos because it is all he knows. The man who grew up with an absent father often becomes absent because he never saw what presence looks like. Breaking the cycle does not require therapy alone — it requires conscious, deliberate behaviour change, repeated long enough to become a new default. You are not just parenting your children — you are re-parenting yourself.",
-        action: "Identify the top three patterns in your family you do not want to repeat. Write them down. For each one, write the opposite behaviour. Practice the opposite for 30 days and track it. The cycle breaks one deliberate decision at a time.",
-        solution: "Build a new model in three areas: 1) Emotional honesty — name what you feel before it becomes behaviour. 2) Financial legacy — every generation leaves something or starts over. You choose which. 3) Relational presence — be physically and emotionally available in a way you did not receive.",
-        related: ["I grew up without a father. How does that affect me?", "How do I be a good father?", "I feel depressed and hopeless", "How do I build discipline when I have none?", "I feel like a failure. How do I reset?"]
-    },
-
-    // ── ALPHA MINDSET ──────────────────────────────────────────────
-    {
-        id: 'am1', category: 'alpha-mindset',
-        question: "What does it mean to be an alpha male?",
-        keywords: ['alpha male', 'alpha', 'what is alpha', 'masculine', 'high value man', 'real man', 'strong man', 'manly'],
-        truth: "An alpha male is not defined by dominance or aggression. He is defined by one thing: he has a mission, and women are a by-product of that mission — not the mission itself.",
-        insight: "Alpha males operate from abundance, not scarcity. They have options, they know their value, they do not seek external validation. The key difference between alpha and beta is not income — it is frame. A beta male's confidence is tied to financial success or a woman's approval. When those vanish, he collapses. An alpha male's confidence is internal — rooted in his mission. He does not chase women. He creates conditions that make them chase him.",
-        action: "Audit your 'alpha signal' honestly. Do you pursue your mission daily regardless of anyone else's response? Do you enforce your standards without apology? Do you require women to chase your validation rather than chasing theirs? If the answer to any of these is no — start there.",
-        solution: "The alpha development hierarchy: 1) Develop your mission. 2) Develop financial independence. 3) Develop your physical health. 4) Develop social skills and seduction. In that order. Do not skip to step 4. A man with game but no mission has no self-respect to protect.",
-        related: ["How do I become a high-value man?", "How do I build a masculine frame?", "What is the difference between alpha and beta?", "I feel lost. I have no direction in life.", "Women don't respect me"]
-    },
-    {
-        id: 'am2', category: 'alpha-mindset',
-        question: "How do I build a masculine frame?",
-        keywords: ['masculine frame', 'frame', 'frame control', 'hold frame', 'strong frame', 'composure', 'self control', 'lose frame'],
-        truth: "Frame is the reality you project. If you do not control it, something else — a woman, a job, a crisis — will control it for you.",
-        insight: "Frame is your internal world being stronger than external pressure. A man with frame does not react emotionally to tests, provocations, or emotional swings. He is the calm authority in the room. It is not arrogance — it is groundedness. Frame is built through repeated pressure: the man who holds his position when a woman argues, when his boss pushes him, when failure hits him — that man is building an unshakeable standard. Women do not want a man who caves to pressure. They want a man who is a wall they can push against and still be standing.",
-        action: "Practice frame in low-stakes situations first. When someone asks your opinion, say what you actually think — without hedging or seeking approval. When a woman complains, listen without immediately apologising or explaining yourself. Let there be silence. Frame is built from the inside: meditate, journal, exercise. Know what you stand for before the world asks.",
-        solution: "The frame test: when a woman does something you do not like, do you: a) get upset, b) beg and explain, or c) pull back calmly and let your actions speak? Option C is frame. Practise it in every interaction until it becomes automatic.",
-        related: ["What does it mean to be an alpha male?", "How do I become a high-value man?", "Women test me constantly. How do I pass the tests?", "Why do women lose respect for men?", "How do I stop being needy with women?"]
+        "id": "rizz_14",
+        "category": "rizz",
+        "question": "What is the 'Abundance Mindset' in texting?",
+        "keywords": [
+            "what",
+            "'abundance",
+            "mindset'",
+            "texting"
+        ],
+        "truth": "The phone is for setting dates, not for building relationships.",
+        "insight": "Texting constantly makes you a 'Gay Male Girlfriend'.",
+        "action": [
+            "Turn off read receipts.",
+            "Never send more than she sends.",
+            "Texts should be half her length.",
+            "Wait 1-2 hours to reply.",
+            "Stop 'Good morning' texts."
+        ],
+        "solution": "Texting kills the 'Mystery Gap'. Attraction grows in space.",
+        "biblical": "Proverbs 10:19 - 'Sin is not ended by multiplying words.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'am3', category: 'alpha-mindset',
-        question: "How do I become a high-value man?",
-        keywords: ['high value', 'improve myself', 'self improvement', 'become better', 'be the prize', 'level up', 'upgrade', 'high value man'],
-        truth: "High value is not a destination. It is a daily practice of choosing your mission over your comfort.",
-        insight: "The markers of a high-value male: purpose larger than women, financial discipline, consistent physical health, a real social life, and constant improvement. He doesn't chase women — he creates conditions that attract them. High-value men do not pursue women at the speed women want them to. They set the pace. They do not double-text, over-pursue, or cancel their plans for a woman with low interest in them.",
-        action: "Pick two domains to upgrade this month: your body and your income. Focus on those exclusively. Do not let women be your motivation for self-improvement — let your vision of the man you want to become be the fuel. Women become a natural by-product.",
-        solution: "The 6-month upgrade: Months 1–2: Financial baseline — track spending, eliminate waste, save 20–25% of income. Months 3–4: Physical baseline — gym 3–4x weekly, clean diet, 7–8 hours sleep. Months 5–6: Purpose baseline — develop one high-value skill, expand your social circle, remove low-quality relationships.",
-        related: ["What does it mean to be an alpha male?", "How do I build a masculine frame?", "How do I become financially independent?", "I feel lost. I have no direction in life.", "How do I attract women?"]
+        "id": "rizz_15",
+        "category": "rizz",
+        "question": "The 'No Eye Contact' Rule: What if she won't even look at me?",
+        "keywords": [
+            "contact'",
+            "rule:",
+            "what",
+            "won't",
+            "even",
+            "look"
+        ],
+        "truth": "If she refuses eye contact, she has categorized you as 'Non-Viable.'",
+        "insight": "Women assess status in milliseconds. If she avoids eye contact, it's a hard 'No'.",
+        "action": [
+            "Stop mid-sentence and walk away.",
+            "Do not try to win her back.",
+            "Audit your posture.",
+            "Audit your approach angle.",
+            "Approach someone else immediately."
+        ],
+        "solution": "A '6:25' man assumes she's having a bad day and leaves. He never internalizes it.",
+        "biblical": "Proverbs 23:9 - 'Do not speak to fools, for they will scorn your prudent words.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'am4', category: 'alpha-mindset',
-        question: "How do I build confidence?",
-        keywords: ['confidence', 'self confidence', 'self esteem', 'low confidence', 'shy', 'afraid', 'no confidence', 'insecure', 'self doubt'],
-        truth: "Confidence is not something you are born with — it is built by doing hard things repeatedly until they stop feeling hard.",
-        insight: "Confidence is not universal. A man can be deeply confident in his field and paralysed around women, or the reverse. Real, broad-based confidence comes from consistency: doing the hard thing in a specific domain, repeatedly, until it stops feeling hard. Then expanding to the next domain. The confidence that attracts women is specific: the unspoken certainty that you are good enough, that you have options, and that any woman's decision to stay or leave is interesting but not critical.",
-        action: "Build confidence through evidence accumulation. Choose one area — approaching women, public speaking, a sport, a business skill — and commit to 30 days of daily practice. Each day you show up adds one piece of evidence that 'I can do this.' By day 30 you have 30 pieces of evidence your subconscious cannot argue with.",
-        solution: "Confidence blueprint: 1) Develop a skill you are genuinely proud of — the pride transfers. 2) Build your body — physical strength creates psychological strength. 3) Develop your purpose — a man with a mission has no time for insecurity. 4) Build social capital. 5) Dress intentionally — not to impress others but because how you carry yourself changes how you feel about yourself.",
-        related: ["How do I become a high-value man?", "How do I attract women?", "I feel depressed and hopeless", "I am socially anxious. How do I fix it?", "How do I build a masculine frame?"]
+        "id": "rizz_16",
+        "category": "rizz",
+        "question": "What do I do if she disrespects me in front of other people?",
+        "keywords": [
+            "what",
+            "disrespects",
+            "front",
+            "other",
+            "people"
+        ],
+        "truth": "Public disrespect is a fatal 'Shit Test.'",
+        "insight": "If you tolerate it, the relationship is dead. She loses all biological attraction.",
+        "action": [
+            "Stop smiling. Use 'Stone Face'.",
+            "Hold eye contact for 5 seconds.",
+            "Do not yell or argue.",
+            "Say 'I don't tolerate disrespect' and leave.",
+            "Go 'No Contact' until she apologizes."
+        ],
+        "solution": "The only masculine response to disrespect is the removal of your presence.",
+        "biblical": "Proverbs 22:10 - 'Drive out the mocker, and out goes strife.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'am5', category: 'alpha-mindset',
-        question: "What is the difference between an alpha male and a beta male?",
-        keywords: ['alpha vs beta', 'beta male', 'beta', 'simp', 'blue pill', 'red pill', 'beta mindset', 'weak man', 'people pleaser'],
-        truth: "The alpha-beta divide is not about aggression. It is about whether your confidence is earned internally or borrowed from external validation.",
-        insight: "A beta male's identity is tied to what he can provide: money, status, favours. He attracts women transactionally — she stays because of what he gives, not who he is. When the provision stops, the attraction evaporates. An alpha male's identity is grounded in his mission. His confidence doesn't collapse under hardship because it was never tied to outcomes. Beta males also over-pursue: double-text, apologise when they've done nothing wrong, lower their standards for approval. Each behaviour signals low value.",
-        action: "Audit your behaviours: Do you apologise when you've done nothing wrong? Do you pursue women who aren't pursuing you? Do you change your opinion when a woman disagrees? Each 'yes' is a beta pattern to eliminate — not overnight, but deliberately.",
-        solution: "Understand the spectrum: some men choose not to pursue long-term relationships and maintain a high-value frame while pursuing multiple connections. Others maintain a masculine frame and are genuinely open to serious relationships — on their terms, not out of desperation. Both are valid. What is not valid is staying in a beta frame out of fear. Identify where you stand and build your strategy accordingly.",
-        related: ["What does it mean to be an alpha male?", "How do I build a masculine frame?", "Why do women lose respect for men?", "How do I stop being needy with women?", "Women don't respect me"]
+        "id": "rizz_17",
+        "category": "rizz",
+        "question": "How do I maintain 'Outcome Independence' when I really like her?",
+        "keywords": [
+            "maintain",
+            "'outcome",
+            "independence'",
+            "when",
+            "really",
+            "like"
+        ],
+        "truth": "The more you like her, the more you must be willing to lose her.",
+        "insight": "Liking her triggers 'Boy Psychology'. 'Detachment' is your greatest weapon.",
+        "action": [
+            "Put phone away if anxious.",
+            "Keep your 'Warrior' circle active.",
+            "Date other women.",
+            "She is the icing, not the cake.",
+            "Call out things you dislike."
+        ],
+        "solution": "Outcome independence signals that your 'Purpose' is higher than your 'Drive'.",
+        "biblical": "Proverbs 4:23 - 'Above all else, guard your heart.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'am6', category: 'alpha-mindset',
-        question: "How do I get my confidence back after a setback?",
-        keywords: ['confidence after failure', 'lost confidence', 'rebuild confidence', 'knocked down', 'setback', 'rejection', 'recover', 'bounce back'],
-        truth: "Confidence after a setback is not rebuilt by thinking differently — it is rebuilt by acting differently, immediately, on something small.",
-        insight: "Every man who has ever been knocked back — by a breakup, a business failure, a job loss — faces the same fork in the road. One path is to retreat, to protect, to withdraw from risk. That path guarantees that confidence never returns, because confidence is the residue of action taken under uncertainty. The other path is to take one small, courageous action the same day the setback happens. The action itself is what matters — not the result.",
-        action: "Within 24 hours of a setback: identify the smallest possible courageous action you can take related to the area where you were knocked back. Not a grand redemption — just one step. Send one message. Make one call. Hit the gym. The message to your subconscious is: 'I am not broken.'",
-        solution: "The rebuild protocol: 1) Physical first — train hard the day after a setback to break the paralysis cycle. 2) Social second — be around people who remind you who you are. 3) Progress third — make one measurable improvement in any domain within 48 hours. Stack these for 30 days. You will not recognise yourself.",
-        related: ["I feel like a failure. How do I reset?", "How do I build confidence?", "She broke up with me. How do I handle it?", "I feel depressed and hopeless", "How do I become a high-value man?"]
-    },
-
-    // ── ATTRACTION & SEDUCTION ─────────────────────────────────────
-    {
-        id: 'at1', category: 'attraction',
-        question: "How do I attract women?",
-        keywords: ['attract women', 'attract girls', 'how to get women', 'women attraction', 'meet women', 'approach women', 'get dates'],
-        truth: "Women are attracted first to confidence and purpose — not looks, height, or money. Your swagger is more powerful than your wallet.",
-        insight: "Women select primarily on confidence signals, not physical attributes. This is why a man with genuine presence in a worn t-shirt outperforms a man in a designer suit who is seeking validation. Women test constantly. Every push-back, every cold reply, every 'I'm busy' is a filter. The man who is not crushed by rejection, who clearly has other options, signals high value. The man who chases, explains, or begs signals low value.",
-        action: "Stop approaching women with the goal of getting a number or a date. Approach with the goal of a genuine, confident interaction — and let the result take care of itself. Never show that you need the interaction to go well. If she flakes, replace her. Your job is to be the most confident version of yourself, not to entertain her.",
-        solution: "The attraction hierarchy: 1) Get on your purpose — the most attractive thing a man can have. 2) Develop your swagger — how you carry yourself, your voice, your eye contact. 3) Improve your appearance — grooming, fitness, style in that order. 4) Develop the ability to make women feel emotionally safe and excited simultaneously. Build these in sequence. Most men skip to step 3. Start at step 1.",
-        related: ["How do I build a masculine frame?", "How do I become a high-value man?", "She ghosted me. What do I do?", "Women don't respect me", "How do I build confidence?"]
-    },
-    {
-        id: 'at2', category: 'attraction',
-        question: "How do I approach a woman I'm attracted to?",
-        keywords: ['approach women', 'approach girls', 'how to approach', 'talk to girls', 'cold approach', 'fear of approach', 'opening'],
-        truth: "The approach itself is the victory. Most men never attempt it. The man who approaches — regardless of outcome — is already in a different category.",
-        insight: "Fear of approach is almost universal. It is rooted in the perceived catastrophe of rejection. But rejection is not catastrophic — it is data. It tells you about interest level, not about your worth. The man who does not flinch when rejected is communicating something powerful: he has other options, and this was just one of many interactions. That signal alone makes you more attractive than 80% of the men she encounters.",
-        action: "The two-second rule: when you notice a woman you want to speak to, approach within two seconds. Do not let your brain write the script of rejection. Keep the opener simple and genuine: 'I had to come over and say...' Do not use lines. Use reality. Tell her what you actually noticed.",
-        solution: "Build approach confidence progressively: Week 1 — make eye contact and smile at every woman you find attractive. Week 2 — say something brief and non-romantic to three women per day. Week 3 — give one genuine compliment per day. Week 4 — hold a real conversation. By week 4, the fear has substantially decreased because you have 21 days of evidence that you survive approaches.",
-        related: ["How do I attract women?", "How do I build confidence?", "How do I stop being needy with women?", "She ghosted me. What do I do?", "I am socially anxious. How do I fix it?"]
+        "id": "rizz_20",
+        "category": "rizz",
+        "question": "How do I 'Close' the deal without being creepy?",
+        "keywords": [
+            "'close'",
+            "deal",
+            "without",
+            "being",
+            "creepy"
+        ],
+        "truth": "'Creepiness' is the result of 'Scarcity'. 'Closing' is the result of 'Leading'.",
+        "insight": "Men fail because they fear rejection. A '6:25' man assumes attraction.",
+        "action": [
+            "Stop asking for permission.",
+            "Use the 'Three-Second Rule'.",
+            "Use physical calibration early.",
+            "Remain detached if she pulls away.",
+            "Have a logistical plan."
+        ],
+        "solution": "Closing is an act of 'Masculine Leadership'.",
+        "biblical": "Song of Songs 1:2 - 'Let him kiss me with the kisses of his mouth.'",
+        "book1": "https://a.co/d/3E7uE9m",
+        "book2": "https://a.co/d/8N7uE1l",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'at3', category: 'attraction',
-        question: "How do I develop my swagger and charisma?",
-        keywords: ['swagger', 'charisma', 'confidence walking', 'body language', 'presence', 'attractive energy', 'magnetism', 'vibe'],
-        truth: "Swagger is not about clothes or status — it is the physical and vocal signature of a man who believes he belongs in any room he enters.",
-        insight: "Charisma is not a talent — it is a set of learnable behaviours: slow, deliberate movement; deep, measured voice; sustained eye contact; the ability to be comfortable with silence; and the assumption that you are welcome wherever you go. Men who have these qualities are not born with them. They developed them — usually through years of operating in high-pressure social environments and deciding not to flinch.",
-        action: "This week, work on one element: walk slower than you think you need to. Not slow-motion — just deliberate. Notice how you occupy space differently. People treat a man who moves with intention differently from a man who moves with urgency. That is the first layer of swagger.",
-        solution: "Build swagger in layers: 1) Posture — shoulders back, chest open, chin parallel to the floor. Practice daily. 2) Voice — speak more slowly, lower your pitch slightly, pause before answering. 3) Eye contact — hold it a beat longer than comfortable. 4) Stillness — stop fidgeting. Stillness signals confidence. 5) Dress — wear clothes that fit and are intentional. Not expensive — intentional.",
-        related: ["How do I attract women?", "How do I build confidence?", "How do I build a masculine frame?", "How do I become a high-value man?", "How do I approach a woman I'm attracted to?"]
+        "id": "p17",
+        "category": "purpose",
+        "question": "Why is 'making a difference' more important than just 'making money'?",
+        "truth": "Money is a measurement of value, but mission is the fuel that keeps you in the game.",
+        "insight": "The 'Purpose Void' occurs when a man chases numbers without a 'glint in his eye.'",
+        "action": [
+            "Identify skills that solve problems.",
+            "List top five core values.",
+            "Write your funeral speech.",
+            "Offer a free solution today.",
+            "Create a mission statement."
+        ],
+        "solution": "A man without a mission is a man without a target. Money is the resource, mission is the fuel.",
+        "biblical": "Matthew 6:33 - 'But seek first the kingdom of God...'",
+        "book1": "https://a.co/d/4S7U7E0",
+        "book2": "https://a.co/d/h6mD7y7",
+        "yt1": "https://www.youtube.com/@lewishowes",
+        "yt2": "https://www.youtube.com/@PurposeFocused"
     },
     {
-        id: 'at4', category: 'attraction',
-        question: "How do I become more sexually attractive?",
-        keywords: ['sexually attractive', 'sexual appeal', 'seduction', 'sex appeal', 'attractive to women', 'desirable', 'magnetism'],
-        truth: "Sexual attractiveness is 80% your energy, presence, and confidence — and 20% your physical appearance.",
-        insight: "The distinction between a man women find physically attractive and a man women find sexually compelling is almost entirely internal. Sexual energy comes from a man who is at home in his body, who does not suppress his masculinity, who is comfortable making and sustaining desire. It is the man who looks at a woman like he is genuinely interested and entirely unafraid of what she thinks of him. That combination — interest plus fearlessness — is rare and extraordinarily attractive.",
-        action: "Start by removing the apologetic energy from how you engage with women. Stop shrinking. Stop over-explaining. Stop asking permission to be interested. You are allowed to be attracted to women. You are allowed to pursue. The key is to do it from a place of confidence, not desperation.",
-        solution: "Develop the masculine polarity: be decisive (lead), be present (give her your full attention without your phone), be physical appropriately (touch is part of seduction — a hand on the back, a guiding gesture), and be honest about your interest. Men who are clear about their intentions without being needy are rare.",
-        related: ["How do I attract women?", "How do I develop my swagger and charisma?", "How do I build a masculine frame?", "How do I stop being needy with women?", "How do I approach a woman I'm attracted to?"]
-    },
-
-    // ── DATING STRATEGY ────────────────────────────────────────────
-    {
-        id: 'd1', category: 'dating',
-        question: "Women test me constantly. How do I pass the tests?",
-        keywords: ['women test', 'shit test', 'passing tests', 'woman testing', 'she is testing me', 'emotional test', 'challenge me'],
-        truth: "Women test you not to hurt you — but to find out if you are the real thing. Testing is how they screen for the strongest man available.",
-        insight: "Women test men because they are hardwired to avoid investing in men who will collapse under pressure. Every cold text, every 'I'm busy,' every 'I don't know if I can make it' is a filter. The man who chases, begs, or gets emotionally upset fails. The man who holds his ground, maintains his frame, and shows he has a life that doesn't revolve around her passes. The higher your perceived value, the harder they test — because they're trying to make sure they're not being fooled.",
-        action: "When a woman tests you: 1) Do not react emotionally. 2) Do not explain or justify yourself. 3) Return to your frame — continue being the man you were before the test. If she sees that you are the same man regardless of what she throws, that is the most attractive signal possible.",
-        solution: "Categorise tests: Availability tests ('I'm busy') — pass by not over-pursuing. Emotional tests (drama, conflict) — pass by staying calm. Value tests ('Why should I date you?') — pass by not justifying; just smile. Consistency tests (she pulls back) — pass by having enough options that you genuinely aren't fazed.",
-        related: ["How do I attract women?", "How do I build a masculine frame?", "She ghosted me. What do I do?", "Women don't respect me", "How do I stop being needy with women?"]
+        "id": "gen_17",
+        "category": "purpose",
+        "question": "I feel lost. I have no direction in life.",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'd2', category: 'dating',
-        question: "She ghosted me. What do I do?",
-        keywords: ['ghosted', 'she disappeared', 'no reply', 'she stopped texting', 'went silent', 'blocked me', 'no response'],
-        truth: "Ghosting is a woman communicating low interest without the discomfort of saying it directly. Your response determines whether you ever cross her mind again.",
-        insight: "If a woman ghosts you, her interest level was already low. Chasing — sending more messages, demanding an explanation, expressing hurt — confirms her instinct to distance herself. The power move is to stop pursuing immediately and return to your mission. A man who disappears when ghosted signals high value — he clearly has other options and doesn't need her attention to feel validated. Many women return weeks or months later to a man who reacted this way, because his non-reaction communicated something rare: genuine confidence.",
-        action: "Send no follow-up message. Delete her number if needed to resist the temptation. Return to your mission, training, social life, and other options. If she comes back, do not immediately re-invest at the same level. Let her re-earn her position.",
-        solution: "Build genuine abundance: when you have multiple women interested in you, one ghosting barely registers and you never need to ask 'what do I text?' The answer is always nothing. The solution to ghosting anxiety is having enough options that any individual woman's behaviour is interesting but not critical.",
-        related: ["How do I attract women?", "How do I stop being needy with women?", "She came back after leaving. Should I take her back?", "Women test me constantly", "How do I build confidence?"]
+        "id": "gen_18",
+        "category": "purpose",
+        "question": "How do I find my purpose in life?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'd3', category: 'dating',
-        question: "How do I stop being needy with women?",
-        keywords: ['needy', 'clingy', 'desperate', 'over pursue', 'attached', 'double text', 'chase her', 'validation seeking', 'insecure around women'],
-        truth: "Neediness is the number one attraction killer. It signals low value more loudly than anything else you can do.",
-        insight: "Neediness comes from one source: a lack of options and purpose. When a man has no mission and few women interested in him, any single woman becomes disproportionately important. Every unanswered text becomes a catastrophe. The cure is not a strategy — it is a life upgrade. Build options: appearance, social life, financial independence, attractiveness. Build purpose: a man focused on his mission doesn't have time to obsess over whether one woman texted back.",
-        action: "The 48-hour rule: after sending a message, wait 48 hours before sending another. No exceptions. Use that time to do something for your mission. Over time, the anxiety decreases because you're building a life that doesn't depend on her response.",
-        solution: "Build a life so full and purposeful that women are competing for your attention. Pursue multiple interests simultaneously so no single woman holds your emotional state hostage. Neediness disappears when abundance is real, not performed.",
-        related: ["How do I attract women?", "How do I build a masculine frame?", "She ghosted me. What do I do?", "How do I become a high-value man?", "What is the difference between alpha and beta?"]
+        "id": "gen_19",
+        "category": "purpose",
+        "question": "I have a failure to launch problem; how do I get started?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'd4', category: 'dating',
-        question: "How do I get a woman's number?",
-        keywords: ['get her number', 'phone number', 'ask for number', 'how to ask girl out', 'close', 'ask out'],
-        truth: "A woman gives her number to a man she wants to hear from again. Your job is to be that man in the interaction — not to ask for the number.",
-        insight: "The number is a by-product of a high-quality interaction, not the goal. Men who focus on 'getting the number' tend to have transactional, nervous energy that women detect immediately. The man who focuses on having a genuine, confident, enjoyable conversation — and simply says 'we should continue this, give me your number' at the right moment — succeeds because he has built actual interest first.",
-        action: "Have a real conversation first. Ask genuine questions. Make her laugh. Create a moment of real connection or intrigue. Then, when the energy is good, state it — don't ask it — as a simple fact: 'Give me your number.' The statement, not the question, is confidence.",
-        solution: "If she hesitates or gives a fake number, it means the interaction did not build enough interest. Do not chase or negotiate. Move on. The correct response is zero emotional reaction. The lack of a reaction is itself attractive — it proves you have options.",
-        related: ["How do I approach a woman I'm attracted to?", "How do I attract women?", "How do I develop my swagger and charisma?", "How do I stop being needy with women?", "She ghosted me. What do I do?"]
+        "id": "gen_20",
+        "category": "purpose",
+        "question": "How do I build discipline when I have none?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'd5', category: 'dating',
-        question: "She is sending mixed signals. What does it mean?",
-        keywords: ['mixed signals', 'hot and cold', 'she blows hot cold', 'confused', 'is she interested', 'playing games', 'testing me', 'inconsistent'],
-        truth: "Mixed signals almost always mean low interest combined with a desire to keep you available. Her actions tell you the truth; her words are the noise.",
-        insight: "A woman who is genuinely high-interest is not confusing. She responds, she makes time, she initiates sometimes. Mixed signals — hot one day, cold the next — usually mean she is deciding whether you are worth investing in, or she enjoys the attention but has not committed to the investment. The man who chases mixed signals trains women to blow hot and cold because that behaviour keeps him engaged.",
-        action: "Stop trying to interpret the signals. Instead, look at one thing: is she making herself consistently available within a reasonable timeframe? If yes, continue investing slowly. If no, reduce your investment to match hers and give your energy to women who are clearer.",
-        solution: "The simplest rule: her interest level is demonstrated by how much she makes herself available. Everything else is noise. Let your actions respond to her actions — not to her words, not to your hopes, not to her best performance.",
-        related: ["She ghosted me. What do I do?", "Women test me constantly", "How do I stop being needy with women?", "How do I attract women?", "She came back after leaving. Should I take her back?"]
+        "id": "gen_21",
+        "category": "purpose",
+        "question": "How do I stop being lazy?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
     {
-        id: 'd6', category: 'dating',
-        question: "How do I get out of the friend zone?",
-        keywords: ['friend zone', 'friendzoned', 'just friends', 'she sees me as a friend', 'how to escape friend zone', 'she put me in friend zone'],
-        truth: "The friend zone is not a location women put you in — it is a position you allowed yourself to occupy by never establishing romantic intent.",
-        insight: "The friend zone exists because a man suppressed his attraction to avoid rejection, performed friendship services hoping to build romantic value, and waited for a moment that never came. Women do not promote friends to romantic partners based on accumulated acts of service. They select men who made their romantic interest clear from the beginning and demonstrated the confidence to maintain it without crumbling.",
-        action: "If you are already in the friend zone: have one honest conversation where you communicate your actual interest. Say it directly, without apology. Then withdraw your effort to let her make a real decision. If the answer is no, remove yourself from the situation entirely — a man cannot build his own self-respect by remaining in proximity to a woman who has rejected him while hoping she changes her mind.",
-        solution: "Prevention is the only reliable cure. From now on: never pursue a woman as a friend when you want her as a partner. Make your interest clear early, hold your frame if she tests or delays, and be prepared to walk away. Availability without romantic intent creates friendship. Romantic intent with the willingness to walk away creates attraction.",
-        related: ["How do I attract women?", "How do I stop being needy with women?", "Women don't respect me", "How do I build a masculine frame?", "How do I approach a woman I'm attracted to?"]
+        "id": "gen_22",
+        "category": "purpose",
+        "question": "I feel like a failure; how do I reset?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
     },
-
-    // ── BREAKUPS & EXES ────────────────────────────────────────────
-    { id: 'b1', category: 'breakups', question: "She broke up with me. How do I handle it?", keywords: ['breakup', 'broke up', 'she left me', 'dumped', 'heartbreak', 'separation'], truth: "A breakup tests your masculinity more than almost anything. How you handle it determines whether she — or any woman — ever respects you again.", insight: "Never be the first to try to reconcile after a breakup. Never call first, show up with flowers, or beg. The man who goes silent, maintains his dignity, and visibly rebuilds his life creates the conditions where she reconsiders. Most men who chase after a breakup destroy the last of her respect for them.", action: "First 72 hours: no contact. Block her on social media if necessary. Reach out to your closest male friends. Do not be alone. Then commit to 30 days of no contact. Use it to train harder, invest in your purpose, and meet new people.", solution: "Recovery: 1) No contact — silence does the work. 2) Focus on yourself — gym, purpose, social life. 3) After 30 days ask honestly: do you even want her back? Often the answer becomes no. 4) If she reaches out, respond calmly but do not immediately re-invest. Let her work for it.", related: ["She came back after leaving. Should I take her back?", "How do I get over a woman I loved?", "How do I stop being needy with women?", "She broke up with me but still contacts me", "Women don't respect me. What am I doing wrong?"] },
-
-    { id: 'b2', category: 'breakups', question: "She came back after leaving. Should I take her back?", keywords: ['she came back', 'ex came back', 'she wants me back', 'take her back', 'reconcile', 'ex back'], truth: "A woman coming back is not proof she has changed — it is proof she missed what she lost.", insight: "If she comes back after you handled the breakup well — no begging, no chasing, visibly moved on — her return confirms your value registered. But is she genuinely re-invested or just checking if you are still available on standby? She must demonstrate through actions — not words — that something is genuinely different.", action: "Respond calmly and warmly — but do not reschedule your life around her. Take it slow. Go on one date. Assess her actions, not her words. A woman with genuine renewed interest will chase. If she gets your attention and goes cold, she was never re-invested.", solution: "Returning ex framework: 1) She must initiate multiple times before you fully re-engage. 2) She starts from the bottom of your attention hierarchy. 3) Address the original cause of the breakup in one honest conversation. 4) Your life does not pause for her return.", related: ["She broke up with me. How do I handle it?", "I think she is cheating. What are the signs?", "How do I stop being needy with women?", "How do I get over a woman I loved?", "How do I know if she really loves me?"] },
-
-    { id: 'b3', category: 'breakups', question: "I think she is cheating. What are the signs?", keywords: ['cheating', 'infidelity', 'is she cheating', 'unfaithful', 'she cheated', 'betrayal', 'another man'], truth: "If you suspect cheating, the relationship dynamic has already shifted. A woman fully invested in a high-value man rarely cheats — she leaves instead.", insight: "Two situations: 1) If she always saw you as a provider she was never deeply attracted, she may always have been open to someone she genuinely desired. 2) If she was attracted but you lost your frame and passion died, she is more likely to leave than cheat. Warning signs: she becomes cold, argumentative, suddenly more interested in her appearance, and withdraws physically.", action: "Do not confront without evidence. Honestly evaluate yourself: have you maintained your standards, your purpose, and the attraction in the relationship? Often the real issue is complacency — and the solution is reasserting your masculine energy, not an accusation.", solution: "If you confirm it: walk away with your dignity intact. A woman who cheats has broken the fundamental contract. Staying without consequence signals your standards are flexible — and that dynamic never improves.", related: ["She broke up with me. How do I handle it?", "Why do women lose respect for men?", "How do I build a masculine frame?", "She came back after leaving. Should I take her back?", "Why does my girlfriend not want sex?"] },
-
-    { id: 'b4', category: 'breakups', question: "How do I get over a woman I loved?", keywords: ['get over her', 'move on', 'heartbreak', 'over a girl', 'cant stop thinking about her', 'obsessed with ex', 'miss her'], truth: "You do not get over a woman by thinking less about her — you get over her by building something more worth thinking about.", insight: "The reason men cannot move on is that she filled a void — purpose, validation, companionship — that was empty before she arrived. She was not the source of those things; she was a temporary container. The cure is building a life so rich that she becomes a chapter, not a defining event.", action: "The 30-day protocol: 1) No contact — no checking her social media. 2) Fill the void daily with something productive. 3) Write one paragraph per day about what you are building toward. 4) Train hard — exercise accelerates emotional recovery faster than almost anything.", solution: "Reconnect with what you neglected during the relationship — your purpose, social circle, physical health. The man you become while getting over her is the man who no longer needs her. That is often the version she regrets losing.", related: ["She broke up with me. How do I handle it?", "How do I stop being needy with women?", "I feel lost. I have no direction in life.", "How do I build confidence?", "I feel depressed and hopeless."] },
-
-    { id: 'b5', category: 'breakups', question: "She broke up with me but still contacts me. What does it mean?", keywords: ['broke up but texts', 'contacts me after breakup', 'breadcrumbing', 'keeping me around', 'mixed signals after breakup'], truth: "A woman who breaks up with you but still contacts you is not giving you a second chance — she is keeping her options open.", insight: "Post-breakup contact usually means she misses the attention, has not found anything better, or is genuinely reconsidering. You cannot tell which from contact alone. What you can tell: if she contacts but does not pursue, she is maintaining access without commitment — a holding pattern, not a relationship.", action: "Respond but do not initiate. Match her investment — if she sends a short message, send a shorter one. Keep calls brief. Do not pour emotions in. Let her demonstrate through consistent increasing effort that she is genuinely re-investing.", solution: "Give it 60 days. If her contact increases and she actively pursues reconciliation, explore it slowly. If it stays comfortable but non-committal, she is keeping you as an option. Remove yourself completely. You cannot build something real on someone else's ambivalence.", related: ["She came back after leaving. Should I take her back?", "She broke up with me. How do I handle it?", "She is sending mixed signals. What does it mean?", "How do I stop being needy with women?", "How do I get over a woman I loved?"] },
-
-    { id: 'b6', category: 'breakups', question: "How do I know if she really loves me or is using me?", keywords: ['is she using me', 'does she love me', 'using me for money', 'using me for attention', 'real love', 'transactional relationship'], truth: "A woman who loves you shows up during your difficult moments and does not disappear when you stop providing.", insight: "The clearest test: remove what you provide and observe what happens. If the relationship vanishes when your money, status, or availability disappears — you were a resource. If she stays and invests more when things are hard — she chose you. Love is demonstrated under adversity, not comfort.", action: "Pay attention to what she does when you are unavailable or struggling — not what she says when everything is good. Affection given when there is nothing to gain is real. Affection given when there is something to receive is transactional.", solution: "Build your own value first so you attract women from strength. When a woman enters your life while you are already purposeful, financially stable, and socially active — she is adding to something real. When she enters while you are empty and desperate, the relationship reflects that.", related: ["She only sees me as a provider. How do I change that?", "I think she is cheating. What are the signs?", "She came back after leaving. Should I take her back?", "Women don't respect me. What am I doing wrong?", "Why do women lose respect for men?"] },
-
-    { id: 'b7', category: 'breakups', question: "She only sees me as a provider. How do I change that?", keywords: ['provider', 'uses me for money', 'transactional', 'sees me as a wallet', 'beta provider'], truth: "A woman who only sees you as a provider was never attracted to you — she was attracted to what you gave. You cannot change that frame by giving more.", insight: "The provider frame is built when a man offers money and favours before genuine attraction is established. Once the frame is set, more giving cements it. She has learned you are a resource, not a man. More provision deepens the problem.", action: "Stop providing — immediately and completely. No gifts, no favours, no extras unless she has earned them through genuine investment. The withdrawal reveals the relationship for what it is. If she disappears, you have your answer.", solution: "The long-term fix is prevention: never enter the provider frame. Establish attraction first. Make your interest clear. Do not try to earn romantic access through service. The man who is desired does not need to buy access.", related: ["I think she is cheating. What are the signs?", "How do I know if she really loves me or is using me?", "What is the difference between an alpha male and a beta male?", "How do I attract women?", "Women don't respect me. What am I doing wrong?"] },
-
-    // ── RELATIONSHIPS ──────────────────────────────────────────────
-    { id: 'r1', category: 'relationships', question: "Why does my wife or girlfriend not want to have sex with me?", keywords: ['wife no sex', 'girlfriend no sex', 'dead bedroom', 'no intimacy', 'she rejects me', 'no passion', 'lost spark'], truth: "A woman who has stopped wanting sex is telling you — without words — that attraction has collapsed. The question is what collapsed it.", insight: "Most men bring their best during courtship and their worst during a relationship. Women lose sexual interest not because of physical changes but because the masculine frame that attracted them has dissolved. When a man becomes predictable, compliant, and emotionally needy, he stops being a source of desire and becomes only a source of comfort. Comfort is not arousing.", action: "Stop seeking sex. Rebuild the attraction first. Go back to having your own life — your training, your friendships, your mission. When she senses you are the same high-value man she was initially drawn to, desire often returns on its own.", solution: "Self-audit: 1) Have you maintained your physical appearance? 2) Your masculine frame? 3) Your social life outside the relationship? 4) Your purpose? 5) Have you introduced new experiences? Address each failure in that order.", related: ["I think she is cheating. What are the signs?", "How do I build a masculine frame?", "Why do women lose respect for men?", "How do I attract women?", "She broke up with me. How do I handle it?"] },
-
-    { id: 'r2', category: 'relationships', question: "Why do women lose respect for men?", keywords: ['she lost respect', 'no respect in relationship', 'she treats me badly', 'she changed', 'she became cold'], truth: "Women lose respect the moment they stop seeing behaviour they cannot push through. When you become fully predictable and compliant, you become invisible as a man.", insight: "Attraction is maintained by a man who holds his ground, enforces his standards, and has a life that does not orbit around her. The moment a man starts seeking approval, tolerating disrespect without consequence, or making her his entire world, attraction begins to die — not because she is cruel, but because people lose interest in things that offer no challenge.", action: "Identify one area where you have been fully compliant and lost your position. Re-establish it this week — not through argument, but through changed behaviour. Stop tolerating the one thing you have been tolerating.", solution: "Respect maintenance: 1) Enforce standards — firmly, not angrily. 2) Maintain your own social life and purpose. 3) Do not seek her validation for your self-worth. 4) Keep physical attraction alive. 5) Be willing to walk away from anything that violates your core values.", related: ["Why does my wife or girlfriend not want to have sex with me?", "How do I build a masculine frame?", "Women test me constantly. How do I pass the tests?", "I think she is cheating. What are the signs?", "She broke up with me. How do I handle it?"] },
-
-    { id: 'r3', category: 'relationships', question: "How do I know when to commit to a woman?", keywords: ['commit', 'commitment', 'when to commit', 'should I commit', 'exclusive', 'relationship status'], truth: "Commit when she has demonstrated — through consistent voluntary behaviour over time — that she invests in you as much as you invest in her.", insight: "Most men commit too early, out of fear of losing access. But commitment given too early destroys the dynamic that attracted her. High-value men allow themselves to be pursued. They let a woman work to earn commitment rather than offering it immediately in exchange for access.", action: "Track her actions — not her words — for 60 to 90 days. Does she make consistent effort? Does she show up when inconvenient? Does she initiate? If yes across the board, the commitment conversation happens naturally.", solution: "Commit from freedom, not fear. A relationship is only worth committing to when both people invest equally and voluntarily. Never commit in response to pressure or ultimatum — that dynamic never improves.", related: ["How do I know if she really loves me or is using me?", "She is sending mixed signals. What does it mean?", "Women test me constantly. How do I pass the tests?", "She only sees me as a provider. How do I change that?", "Why do women lose respect for men?"] },
-
-    { id: 'r4', category: 'relationships', question: "How do I maintain attraction in a long-term relationship?", keywords: ['maintain attraction', 'keep her attracted', 'long term relationship', 'relationship spark', 'bored in relationship', 'complacency'], truth: "The greatest threat to long-term attraction is the man stopping being the man she fell in love with.", insight: "The biggest mistake men make is treating commitment as the finish line instead of the starting line. They stop training, stop seeing friends, stop pursuing their mission, stop being unpredictable. Attraction is dynamic — it rises when you grow and falls when you stagnate. A woman wants to be part of a great man's journey — not the destination of it.", action: "This week: re-engage two things you have let slip since the relationship started. Your training. Your social circle. Your mission. Bring them back with no announcement. Let her notice the change.", solution: "Long-term attraction: 1) Never stop your mission. 2) Maintain physical standards. 3) Lead decisions — even small ones. 4) Do not seek her validation for your self-worth. 5) Introduce new experiences regularly. 6) Maintain mystery by having a life she is not the centre of.", related: ["Why does my wife or girlfriend not want to have sex with me?", "Why do women lose respect for men?", "How do I build a masculine frame?", "What does it mean to be an alpha male?", "How do I know when to commit to a woman?"] },
-
-    { id: 'r5', category: 'relationships', question: "She is too controlling. How do I handle it?", keywords: ['controlling girlfriend', 'controlling wife', 'she controls me', 'bossy', 'she dictates', 'no freedom', 'possessive'], truth: "A woman can only control a man who has surrendered his frame. The solution is not argument — it is reclaiming your position.", insight: "Controlling behaviour emerges when a man has demonstrated through excessive compliance that he has no limits. She did not become controlling in a vacuum — she expanded into the space he left open. The answer is to quietly, consistently, without drama, re-establish your own space, decisions, and non-negotiables.", action: "Identify one limit she has crossed that you have been tolerating. Re-establish it this week without making it a fight. Simply do what you were doing before — without permission, without apology. Consistency is the message.", solution: "The dynamic shifts when you stop seeking her approval for your decisions. Make decisions about your schedule, friendships, money, and body without needing her consent. A woman who respects you will adjust. A woman who does not will escalate — and that tells you what you need to know about the relationship itself.", related: ["Why do women lose respect for men?", "How do I build a masculine frame?", "How do I maintain attraction in a long-term relationship?", "Women test me constantly. How do I pass the tests?", "Women don't respect me. What am I doing wrong?"] },
-
-    { id: 'r6', category: 'relationships', question: "Should I get married?", keywords: ['should I get married', 'marriage', 'is marriage worth it', 'getting married', 'long term commitment', 'wife material', 'propose'], truth: "Marriage is not a milestone to achieve — it is a major legal and life partnership that should only be entered with full clarity, not external pressure.", insight: "The legal, financial, and emotional risks of marriage are significant and are not distributed equally in most legal systems. Before committing, understand fully what the contract means in your jurisdiction. Due diligence is not a lack of love — it is what a man with a mission does before signing any major contract.", action: "Before marriage: have the hard conversations about money, children, roles, and values before the ring — not after it. Understand the legal contract. Observe how she handles conflict with her own family — those patterns intensify in marriage, they do not diminish.", solution: "Do not marry from societal pressure or fear of losing her. Marry when you have found a genuinely compatible partner who has demonstrated character over time, and when the decision is made freely from a position of strength and clarity — not anxiety or obligation.", related: ["How do I know when to commit to a woman?", "How do I know if she really loves me or is using me?", "How do I maintain attraction in a long-term relationship?", "Why do women lose respect for men?", "She only sees me as a provider. How do I change that?"] },
-
-    // ── SOCIAL LIFE & RESPECT ──────────────────────────────────────
-    { id: 's1', category: 'social', question: "Women don't respect me. What am I doing wrong?", keywords: ['no respect', 'disrespect', 'she disrespects me', 'women dont respect', 'doormat', 'people pleaser', 'she walks over me'], truth: "Respect from women is not given based on kindness. It is commanded by holding limits and being prepared to walk away when they are violated.", insight: "The man who does everything for a woman earns contempt — not gratitude. Excessive giving signals scarcity. Women are hardwired to respect the man who is hard to impress — not the man who is easily won over. When you need her approval more than she needs yours, she holds all the power.", action: "Identify the top three ways you currently seek approval from women. Eliminate one of them this week. Start saying no. Start having opinions. Start cancelling plans when your limits are not met. Respect cannot be requested — it is commanded.", solution: "The respect formula: 1) Enforce limits — if a woman treats you badly, reduce your investment without drama. 2) Have genuine options. 3) Stop complimenting excessively. 4) Be direct — say what you mean, ask for what you want, without hedging.", related: ["What does it mean to be an alpha male?", "How do I build a masculine frame?", "Women test me constantly. How do I pass the tests?", "How do I stop being needy with women?", "What is the difference between an alpha male and a beta male?"] },
-
-    { id: 's2', category: 'social', question: "I have no friends or social life. I feel lonely.", keywords: ['lonely', 'no friends', 'isolated', 'social life', 'loneliness', 'no one to talk to', 'alone', 'no brotherhood'], truth: "Male loneliness is one of the most dangerous conditions a man can live in — and one of the most fixable, if you take the first steps.", insight: "Social isolation predicts depression, substance abuse, and vulnerability to manipulation. The reason men become isolated is often pride — admitting you need community feels weak. But brotherhood is infrastructure, not a luxury. High-value men have full social lives. Without a social life, you are more emotionally fragile and far more dependent on any single relationship.", action: "Join something this week. A gym with group classes, a sports team, a business group, a martial arts dojo. Physical, in-person activity shared with other men is the fastest builder of male community. Consistency matters more than quality at first — show up to the same place at the same time, every week.", solution: "Build a personal board of directors: three to five men who hold you accountable, whom you can call when things go wrong, with whom you celebrate wins. Invest in these relationships before you need them. Brotherhood is infrastructure — build it during peace so it is available during war.", related: ["I feel depressed and hopeless.", "How do I build confidence?", "I feel lost. I have no direction in life.", "I grew up without a father. How does that affect me?", "How do I deal with loneliness long-term?"] },
-
-    { id: 's3', category: 'social', question: "I am socially anxious. How do I fix it?", keywords: ['social anxiety', 'shy', 'scared to talk', 'awkward', 'nervous around people', 'social phobia', 'afraid of people'], truth: "Social anxiety is maintained by avoidance. The cure is graduated exposure — doing the uncomfortable thing repeatedly until it stops being uncomfortable.", insight: "Every time you avoid a social situation, you teach your brain that it was genuinely threatening. The relief of avoidance is the trap that keeps the anxiety alive. The nervous system heals through action, not through thinking.", action: "Start at the edge of your comfort zone. Week 1: make eye contact and nod at one stranger per day. Week 2: say one brief, genuine thing to someone in a queue. Week 3: hold one 3-minute conversation with someone you would not normally approach. Build the ladder one rung at a time.", solution: "Long-term: 1) Consistent exposure — the more environments you enter, the less threatening they become. 2) Preparation — have three genuine questions ready before social events. Questions take the pressure off you to perform. 3) Build your body — gym confidence genuinely transfers to social confidence.", related: ["How do I build confidence?", "I have no friends or social life. I feel lonely.", "How do I develop my swagger and charisma?", "How do I deal with anxiety?", "How do I approach a woman I'm attracted to?"] },
-
-    { id: 's4', category: 'social', question: "How do I deal with loneliness long-term?", keywords: ['lonely long term', 'chronic loneliness', 'always alone', 'empty', 'nobody cares', 'invisible', 'feel unseen'], truth: "Chronic loneliness is not a social problem — it is a purpose and identity problem. Men engaged with a real mission rarely feel chronically alone.", insight: "Short-term loneliness is a signal you need more connection. Chronic loneliness signals something deeper is missing: purpose, identity, or never having been fully honest with another person. You cannot build real connection while wearing a mask.", action: "Take a risk this week: tell one person something true about yourself that you have never shared — not for sympathy, but for the experience of being genuinely known. The quality of your social life is directly tied to how honest you are willing to be.", solution: "Build in layers: 1) Structured social activity — same place, same people, every week. 2) One accountability relationship with a man who knows your actual goals. 3) Service — volunteering, coaching, mentoring. When you contribute meaningfully, the feeling of invisibility vanishes.", related: ["I have no friends or social life. I feel lonely.", "I feel depressed and hopeless.", "I feel lost. I have no direction in life.", "I am socially anxious. How do I fix it?", "I grew up without a father. How does that affect me?"] },
-
-    { id: 's5', category: 'social', question: "How do I gain respect from other men?", keywords: ['respect from men', 'earn respect', 'be respected', 'male respect', 'status among men', 'men dont respect me'], truth: "Respect from men is earned through competence, consistency, and character — in that order.", insight: "Men respect other men who are good at something real, who do what they say without exception, and who stand for something when it costs them. Men do not respect men who seek respect — they respect men who are too busy building something to worry about it.", action: "Identify one domain where you want to be formidable among men you respect. Invest in it aggressively for 90 days. Stop announcing plans — let your work ethic and output be the announcement.", solution: "The respect code: 1) Be extraordinarily reliable. 2) Develop genuine expertise in a valued domain. 3) Hold your positions under pressure — change your mind based on evidence, not social pressure. 4) Be generous without keeping score. 5) Protect people around you when it costs you something.", related: ["What does it mean to be an alpha male?", "How do I build a masculine frame?", "How do I become a high-value man?", "Women don't respect me. What am I doing wrong?", "How do I build confidence?"] },
-
-    { id: 's6', category: 'social', question: "How do I stop caring what people think of me?", keywords: ['stop caring what people think', 'validation', 'people pleaser', 'approval seeking', 'fear of judgment'], truth: "You will never fully stop caring what people think — but you can stop letting it control your behaviour.", insight: "Caring what others think is hardwired into human social biology. The problem is when external approval becomes the primary driver of your decisions. A man who needs constant validation shapes himself to fit imagined expectations — and loses his identity in the process.", action: "This week: make one decision you know is right for you but that someone in your life will disapprove of. Make it anyway. Sit with the discomfort. Observe that nothing catastrophic happens. That is your first rep in building internal standards.", solution: "Build identity-based standards: 'I am a man who...' Complete that sentence with your actual values — not what you think others want. Then make decisions consistent with that identity regardless of who agrees. The more consistently you act from internal standards, the less power external opinions hold.", related: ["How do I build confidence?", "How do I build a masculine frame?", "Women don't respect me. What am I doing wrong?", "How do I stop being needy with women?", "What does it mean to be an alpha male?"] },
-
-    // ── HEROISM & SACRIFICE ────────────────────────────────────────
-    { id: 'sc1', category: 'sacrifice', question: "I feel like I sacrifice everything and get nothing in return.", keywords: ['sacrifice', 'giving everything', 'unappreciated', 'no recognition', 'taken for granted', 'doing too much', 'overextended'], truth: "Sacrifice without mission is martyrdom. Sacrifice with mission is investment. The difference is whether you chose it.", insight: "Men are taught that their worth is measured by what they sacrifice. This creates men who give everything to everyone and receive nothing in return — not because the world is ungrateful, but because they never defined the terms of their sacrifice. Strategic sacrifice — giving up temporary comfort for long-term mission — builds great men. Sacrifice as a performance of worthiness destroys them.", action: "Write down the top three things you are currently sacrificing and for whom. Ask honestly: is this building something or maintaining someone else's comfort at your expense? Rebalance. Your mission must be the primary beneficiary of your sacrifice.", solution: "Stop giving before the return is warranted. Build your value first. Give from abundance — not from need. Sacrifice from surplus is received as generosity. Sacrifice from desperation is received as obligation.", related: ["What does it mean to be an alpha male?", "How do I find my purpose in life?", "Women don't respect me. What am I doing wrong?", "I feel lost. I have no direction in life.", "I grew up without a father. How does that affect me?"] },
-
-    { id: 'sc2', category: 'sacrifice', question: "How do I handle disrespect without losing my calm?", keywords: ['handle disrespect', 'stay calm', 'being disrespected', 'dont react', 'keep composure', 'respond to disrespect'], truth: "How you respond to disrespect is your most visible signal of whether you know your own value.", insight: "Overreacting to disrespect is as damaging as accepting it. The man who explodes is as easily manipulated as the man who goes silent — both responses can be predicted and exploited. The man who responds with calm, measured consequence is the man who cannot be controlled. He is not indifferent. He simply does not allow someone else's behaviour to dictate his emotional state.", action: "When disrespected: pause. Breathe. Respond with the minimum words needed to communicate that a limit was crossed and what the consequence is. No explosion, no long speech. Short. Clear. Calm. Then follow through on the consequence — every time.", solution: "Build the inner response library: decide in advance how you will respond to disrespect in different contexts — from a woman, a colleague, a stranger. Pre-decided responses remove the need to improvise under emotional pressure. Consistency in enforcement builds your reputation over time.", related: ["Women don't respect me. What am I doing wrong?", "How do I build a masculine frame?", "How do I deal with anger and aggression?", "How do I gain respect from other men?", "How do I stop caring what people think of me?"] },
-
-    { id: 'sc3', category: 'sacrifice', question: "How do I deal with people who take advantage of me?", keywords: ['taken advantage', 'people use me', 'being used', 'manipulated', 'taken for granted', 'exploited'], truth: "People can only take advantage of you if you allow the dynamic. The moment you enforce consequences, the exploitation ends — or the person leaves. Both outcomes are acceptable.", insight: "Men who are repeatedly exploited share a pattern: they prioritise others' comfort over their own limits, fear conflict more than exploitation, and have not clearly defined what they will and will not tolerate. People stop exploiting not because they become more ethical — but because the exploitation stops working.", action: "Identify the primary person or situation where you are being exploited. Decide on one limit you will enforce. Do it this week through changed behaviour — not a speech. Reduce access, reduce availability. No explanation required.", solution: "Build a zero-tolerance policy: first occurrence — a calm, clear limit is set. Second occurrence — the consequence activates: reduced investment, distance, or full exit. There is no third occurrence for a man who knows his value.", related: ["Women don't respect me. What am I doing wrong?", "I feel like I sacrifice everything and get nothing in return.", "How do I build a masculine frame?", "How do I stop caring what people think of me?", "She only sees me as a provider. How do I change that?"] },
-
-    // ── FINANCE & WEALTH ───────────────────────────────────────────
-    { id: 'fi1', category: 'finance', question: "How do I become financially independent?", keywords: ['financial independence', 'rich', 'wealthy', 'money', 'financial freedom', 'build wealth', 'save money', 'invest', 'broke'], truth: "Financial independence is not about earning more — it is about consistently spending less than you earn and investing the difference over time.", insight: "The trap: men who start earning well immediately upgrade their lifestyle to match. Now they need that income just to survive, have no savings, no margin, and cannot leave situations that are hurting them. The wealthy man looks ordinary. The broke man looks wealthy. The difference is compound interest over twenty years of deliberate discipline.", action: "Pull up your last three months of bank statements. Highlight everything spent outside food, shelter, transport, and health. That is your financial leakage. Redirect 20% of it to savings and commit to investing 5–10% in low-cost index funds or a developing business.", solution: "Financial stages: 1) 18–22: Develop a skill leading to a real income. 2) 22–30: Earn aggressively and save 20–25%. Live below your means. 3) 30+: Transition income toward your true mission. Compound interest does the rest. The earlier you start, the less effort is required later.", related: ["How do I become a high-value man?", "How do I find my purpose in life?", "I have a failure to launch problem. I can't seem to get started.", "How do I build financial discipline?", "I feel lost. I have no direction in life."] },
-
-    { id: 'fi2', category: 'finance', question: "How do I build financial discipline?", keywords: ['financial discipline', 'save money', 'stop spending', 'budget', 'impulse buying', 'money management', 'no savings'], truth: "Financial discipline is making your future self more important than your present feelings.", insight: "Most men spend on feelings: the feeling of status, temporary pleasure, being the one who pays. These purchases destroy financial independence. The discipline needed is not punishment — it is the ability to delay gratification, which is the same core skill required in every other domain of masculine development.", action: "One rule that changes everything: before any non-essential purchase, wait 48 hours. Ask whether it moves you toward or away from your financial mission. Most impulse purchases do not survive 48 hours of reflection.", solution: "Build a system that removes decisions: 1) Automate savings — transfer a fixed amount the day you are paid, before you see it. 2) A fixed monthly budget for discretionary spending — when it is gone, it is gone. 3) Track your net worth monthly. Watching it grow is more motivating than any purchase.", related: ["How do I become financially independent?", "How do I build discipline when I have none?", "I have a failure to launch problem. I can't seem to get started.", "How do I become a high-value man?", "How do I invest my money?"] },
-
-    { id: 'fi3', category: 'finance', question: "How do I invest my money?", keywords: ['invest money', 'investing', 'where to invest', 'stocks', 'index funds', 'start investing', 'grow money'], truth: "The simplest proven strategy — low-cost index funds, invested regularly, over a long time — outperforms most active strategies and 90% of professional fund managers.", insight: "Most men delay investing because they think they need to understand the market before participating. This delay is the most expensive financial mistake a man can make. The man who starts at 22 with modest contributions has dramatically more at 50 than the man who starts at 32 with double the amount. Time in the market beats timing the market — always.", action: "Open a brokerage account this week. Start with a broad market index fund at minimal management cost. Set up a monthly automatic contribution — even if it is small. The habit of regular contribution matters more than the amount at the start.", solution: "Framework: 1) Emergency fund first — 3 to 6 months of expenses in accessible savings. 2) Invest in low-cost index funds — prioritise any employer match. 3) Increase contributions by 1% every 6 months. 4) Do not sell during market drops — volatility is the price of entry for long-term returns. 5) Do not invest in individual stocks until you have a stable fund base.", related: ["How do I become financially independent?", "How do I build financial discipline?", "How do I become a high-value man?", "I feel lost. I have no direction in life.", "How do I build discipline when I have none?"] },
-
-    { id: 'fi4', category: 'finance', question: "How do I make more money?", keywords: ['make more money', 'increase income', 'earn more', 'higher salary', 'side hustle', 'extra income', 'money problems'], truth: "The fastest path to more money is to become more valuable to a market — not to work more hours at what you currently do.", insight: "Most men try to increase income by working harder at their current job. But income is determined by perceived market value, not hours worked. A man who develops a rare and valuable skill earns exponentially more than a man who works twice as many hours at a common skill. The question is not how to work more — it is what skill the market would pay five times more for.", action: "Identify the highest-paid variation of your current skills. Research what specific expertise would multiply your income in your field. Invest 30 focused minutes per day in that development. In 12 to 18 months, the ROI is an entirely new income tier.", solution: "The income ladder: 1) Trade unskilled labour for skilled labour. 2) Within skilled labour, specialise — specialists always earn more than generalists. 3) Move from employee to consultant in your domain — the same skills pay 2 to 3 times more sold directly. 4) Build a business around the skill. Each step multiplies your leverage.", related: ["How do I become financially independent?", "How do I build financial discipline?", "I have a failure to launch problem. I can't seem to get started.", "How do I find my purpose in life?", "How do I become a high-value man?"] },
-
-    { id: 'fi5', category: 'finance', question: "I am drowning in debt. What do I do?", keywords: ['debt', 'drowning in debt', 'cant pay debt', 'loan', 'credit card debt', 'financially stuck', 'owe money'], truth: "Debt is not a life sentence — it is a strategic problem that can be solved with a precise plan executed consistently.", insight: "Men in debt often feel shame that causes them to avoid looking at the problem directly. The avoidance compounds it — interest grows, negotiation opportunities are missed, and the stress degrades every other area of life. The first step is the opposite of avoidance: complete, accurate clarity about exactly what you owe, to whom, and at what interest rate.", action: "This week: write down every debt with its balance, interest rate, and minimum payment. Rank them by interest rate, highest first. Make minimum payments on everything except the highest-rate debt — throw everything extra at that one. When it is eliminated, roll the payment into the next. This is the avalanche method.", solution: "While attacking debt: 1) Temporarily reduce all discretionary spending to minimum. 2) Look for additional income — short-term gigs, selling assets, extra shifts. 3) Take on no new debt. 4) Negotiate with creditors — most accept lower settlements or reduced interest if you communicate proactively. 5) Build a small emergency fund even before clearing debt — this prevents new debt when unexpected costs hit.", related: ["How do I become financially independent?", "How do I build financial discipline?", "How do I make more money?", "I feel like a failure. How do I reset?", "How do I build discipline when I have none?"] },
-
-    { id: 'fi6', category: 'finance', question: "How do I build generational wealth?", keywords: ['generational wealth', 'legacy', 'wealth building', 'family wealth', 'assets', 'long term wealth', 'leave something behind'], truth: "Generational wealth is built when each generation starts further ahead than the one before left off.", insight: "Most families repeat the same financial pattern: spend everything earned, accumulate no real assets, leave nothing transferable. Breaking it requires deliberate decisions at each milestone: buying appreciating assets instead of depreciating ones, investing before acquiring luxuries, teaching children about money explicitly, and building structures that compound beyond your own lifetime.", action: "Start with what you control. Invest a fixed percentage of income into appreciating assets this month. Teach your children about money explicitly — the cycle breaks when the conversation starts. Buy one asset this year that will be worth more in five years than today.", solution: "Generational wealth pillars: 1) Property — own before you rent. 2) Investment accounts — compound returns over decades. 3) Business ownership — equity beats salary over time. 4) Financial literacy passed deliberately to your children. 5) Life insurance and a will — protect everything you build.", related: ["How do I become financially independent?", "How do I invest my money?", "How do I be a good father?", "How do I break generational cycles of dysfunction?", "How do I build financial discipline?"] },
-
-    // ── HEALTH & SELF-MASTERY ──────────────────────────────────────
-    { id: 'h1', category: 'health', question: "Why do men die younger and how do I live longer?", keywords: ['health', 'live longer', 'men die younger', 'male health', 'physical health', 'die early', 'healthy lifestyle', 'longevity'], truth: "Men die younger from 14 of the 15 leading causes of death — and most are preventable. Your lifespan is largely a choice.", insight: "Two forces are killing men early: the belief that sacrificing health is noble — and silence. The silence of not going to the doctor, not admitting symptoms, not asking for help allows preventable conditions to become fatal ones. The man who invests in his health as seriously as his mission lives longer and performs better at both.", action: "This week: schedule a physical — especially if you are over 30 and have not had one in two or more years. Evaluate your relationship with alcohol and risk. Begin a regular sleep routine. Seven to eight hours is not optional for peak performance.", solution: "Physical blueprint: 1) Train 3 to 4 times per week — compound movements. 2) Eat protein-first — 0.8 to 1g per pound of bodyweight. 3) Zero alcohol for 30 days and evaluate. 4) Phone out of the bedroom, same sleep time every night. 5) Annual health screening: blood pressure, testosterone, cholesterol, blood sugar.", related: ["How do I become a high-value man?", "I feel depressed and hopeless.", "How do I build discipline when I have none?", "How do I stop watching porn?", "How do I build confidence?"] },
-
-    { id: 'h2', category: 'health', question: "How do I stop watching porn?", keywords: ['porn', 'pornography', 'porn addiction', 'stop porn', 'masturbation', 'no fap', 'sexual addiction', 'dopamine'], truth: "Pornography is not a sexual outlet — it is a purpose substitute that delivers dopamine without any of the real-world effort masculine achievement requires.", insight: "Men who retreat into pornography are in most cases medicating a purpose void. Pornography trains the brain to require increasingly intense stimulation. Chronic use reduces real-world sexual satisfaction, damages the ability to be attracted to real partners, and creates escalating tolerance. A man who needs pornography is a man who has given up the courage required for real intimacy.", action: "30-day hard reset: no pornography, no masturbation. Track compliance daily. In the first week, redirect every urge to training or mission work. The discomfort is real and temporary. The brain begins to rewire within 2 to 3 weeks for most men.", solution: "Restoration protocol: consistent exercise, clean diet, reduced processed sugar rebuild baseline dopamine function. Then build real intimacy: social environments, genuine interactions with real people. The goal is to make real connection more reinforcing than simulated connection — which happens by building the skills and confidence that make it possible.", related: ["I feel depressed and hopeless.", "I feel lost. I have no direction in life.", "How do I build discipline when I have none?", "How do I stop being needy with women?", "I have a failure to launch problem. I can't seem to get started."] },
-
-    { id: 'h3', category: 'health', question: "How do I get in shape and actually stay there?", keywords: ['get in shape', 'stay in shape', 'lose weight', 'build muscle', 'gym', 'fit', 'out of shape', 'overweight', 'training'], truth: "Getting in shape takes 12 weeks. Staying in shape requires building the identity of a man who trains — not a man trying to get fit.", insight: "Men who start training for external reasons — to impress someone, for a holiday — use motivation that burns fast. The men who stay in shape for life made a permanent identity decision: they are men who train, regardless of whether anyone is watching, regardless of the scale, regardless of how they feel that morning.", action: "Start with frequency over intensity. Three sessions per week, every week, for 90 days — even if each session is modest. Missing two sessions in a row breaks the streak. Guard the streak above everything else.", solution: "Framework: 1) Compound movements — squat, deadlift, bench, pull-ups — are the foundation. 2) Caloric awareness — you cannot out-train a bad diet. Track for 30 days. 3) Protein first at every meal. 4) Sleep — muscle is built during recovery, not training. 5) Progress over perfection — measure improvement not absolute standards.", related: ["Why do men die younger and how do I live longer?", "How do I become a high-value man?", "How do I build discipline when I have none?", "How do I develop my swagger and charisma?", "I feel like I have no energy or drive."] },
-
-    { id: 'h4', category: 'health', question: "I feel physically weak and out of shape. Where do I start?", keywords: ['out of shape', 'physically weak', 'unfit', 'no strength', 'never worked out', 'beginner training', 'start gym', 'get stronger'], truth: "Every physically formidable man today started exactly where you are. The only irreversible mistake is not starting.", insight: "The biggest barrier to starting is perfectionism — the feeling that you need the right gym, plan, or knowledge before beginning. You do not. The first month of training is not about programme perfection — it is about building the habit of showing up. Progress will come. The habit must come first.", action: "Start this week with the simplest possible protocol: three days per week, 30 minutes each. Push-ups, body-weight squats, an attempt at a pull-up, a 20-minute walk. No gym required. Build the habit before you build the programme.", solution: "Beginner compound protocol once ready: Day A — Squat, Bench Press, Row. Day B — Deadlift, Overhead Press, Pull-Ups or Lat Pulldown. Alternate three times per week. Add small weight each session. This simple structure produces significant results within 90 days.", related: ["How do I get in shape and actually stay there?", "How do I build discipline when I have none?", "Why do men die younger and how do I live longer?", "How do I become a high-value man?", "I feel like I have no energy or drive."] },
-
-    { id: 'h5', category: 'health', question: "How do I improve my mental sharpness and focus?", keywords: ['mental focus', 'concentration', 'sharp mind', 'brain health', 'cognitive performance', 'cant focus', 'mind fog', 'mental clarity', 'productivity'], truth: "Your brain responds to the same principles as your muscles: the right inputs produce performance; neglect produces deterioration.", insight: "Mental fog and poor focus are almost always downstream of lifestyle: poor sleep, high processed sugar intake, sedentary behaviour, and excessive screen time. The brain requires physical activity, deep sleep, and adequate nutrition to operate at capacity. Most men reporting low mental clarity are under-sleeping, over-stimulated by screens, and physically inactive — three correctible inputs.", action: "Implement the morning focus block: 90 minutes on your most important task each morning before checking any social media or messages. Phone off. One screen. One task. Protect that block with everything you have. Clarity follows structure.", solution: "Mental performance stack: 1) 7 to 8 hours of quality sleep — non-negotiable. 2) Morning sunlight within 30 minutes of waking. 3) Physical training — even 20 minutes increases cognitive function. 4) Reduce ultra-processed food. 5) Read for 30 minutes per day — sustained attention is a trained skill.", related: ["How do I build discipline when I have none?", "I feel like a failure. How do I reset?", "How do I stop overthinking?", "How do I stop watching porn?", "Why do men die younger and how do I live longer?"] },
-
-    { id: 'h6', category: 'health', question: "I feel like I have no energy or drive.", keywords: ['no energy', 'tired all the time', 'fatigue', 'exhausted', 'low energy', 'no drive', 'lack of energy', 'always tired'], truth: "Chronic low energy is almost never random — it is the output of poor sleep, poor nutrition, sedentary behaviour, or low testosterone. All are addressable.", insight: "Men with persistent low energy are usually over-caffeinating to compensate for poor sleep, eating in ways that spike and crash blood sugar, not exercising consistently, or running on a purpose void with nothing compelling enough to generate drive. Fatigue is feedback — your body and mind telling you that the current inputs are insufficient for the demands being placed on them.", action: "The energy audit: for one week, track your sleep hours, what you eat, how much you move, and your energy at four points in the day. Patterns will emerge immediately. Identify your biggest leak — is it sleep? Food? Exercise? Purpose? Target that first.", solution: "Energy restoration: 1) Fix sleep first — everything else is harder without it. 2) Replace a sugar-heavy breakfast with protein. 3) Walk or train in the morning — the single highest-ROI energy intervention available. 4) If all lifestyle factors are solid and energy remains low: get testosterone and thyroid levels checked. Low testosterone is common and fully treatable.", related: ["Why do men die younger and how do I live longer?", "How do I build discipline when I have none?", "I feel depressed and hopeless.", "I feel lost. I have no direction in life.", "How do I improve my mental sharpness and focus?"] },
-
-    { id: 'h7', category: 'health', question: "How do I quit drinking or drug use?", keywords: ['quit drinking', 'stop alcohol', 'drug addiction', 'substance abuse', 'stop drugs', 'alcohol problem', 'drinking too much', 'addiction'], truth: "Substance use is a solution to pain — it works, which is why it is so hard to stop. The real question is: what is it solving, and can that pain be addressed another way?", insight: "Men use alcohol and drugs primarily to manage anxiety, emotional pain, purpose void, loneliness, and social discomfort. The substance works short-term — it delivers relief, connection, or confidence. But each use deepens the dependency and widens the distance from the real solution. Most men cannot stop until the underlying need is identified and addressed — what will replace what the substance was providing?", action: "Identify the primary function your substance use serves: social courage, emotional numbing, or escape from purpose void? Find a concrete alternative for that specific function. Then make a 30-day commitment with one person who will hold you accountable. Tell them today.", solution: "For severe dependency: professional support is part of the solution — not a sign of weakness. Combine with: 1) Removing yourself from trigger environments. 2) Building a replacement routine during high-risk times. 3) 30-day abstinence with daily accountability. 4) Physical training — the neurochemical reset that consistent training provides is the most effective natural substitute available.", related: ["I feel depressed and hopeless.", "I feel lost. I have no direction in life.", "How do I build discipline when I have none?", "I have no friends or social life. I feel lonely.", "How do I deal with anxiety?"] },
-
-
+    {
+        "id": "gen_23",
+        "category": "purpose",
+        "question": "How do I stay motivated long term?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_24",
+        "category": "purpose",
+        "question": "Why is having a mission more important than just making money?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_25",
+        "category": "purpose",
+        "question": "How do I find my \"edge\" as a man in a soft world?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_26",
+        "category": "purpose",
+        "question": "When should I transition from a provider-protector to a nurturer-connector?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_27",
+        "category": "purpose",
+        "question": "How can \"Heroic Intelligence\" become a trap for my purpose?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_28",
+        "category": "purpose",
+        "question": "How do I find my purpose while the \"Boy Crisis\" is happening?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_29",
+        "category": "purpose",
+        "question": "Why should I prioritize \"Health Intelligence\" over what people think?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_30",
+        "category": "purpose",
+        "question": "How do I stop seeking \"social bribes\" and start seeking mission?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_31",
+        "category": "purpose",
+        "question": "Why is my \"purpose void\" causing me physical pain?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_32",
+        "category": "mental",
+        "question": "I feel depressed and hopeless.",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_33",
+        "category": "mental",
+        "question": "I have suicidal thoughts; how do I find a way out?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_34",
+        "category": "mental",
+        "question": "How do I deal with anxiety?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_35",
+        "category": "mental",
+        "question": "How do I stop overthinking?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_36",
+        "category": "mental",
+        "question": "How do I deal with anger and aggression?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_37",
+        "category": "mental",
+        "question": "What does \"male-style depression\" look like and how do I know if I have it?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_38",
+        "category": "mental",
+        "question": "How do I escape the trap of \"self-disposability\"?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_39",
+        "category": "mental",
+        "question": "How can I fight against the statistics of male suicide?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_40",
+        "category": "mental",
+        "question": "Why is my vulnerability often used against me, and how do I fix it?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_41",
+        "category": "mental",
+        "question": "How do I process grief without losing my masculine frame?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_42",
+        "category": "fatherhood",
+        "question": "I grew up without a father; how does that affect me?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_43",
+        "category": "fatherhood",
+        "question": "How do I be a good father?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_44",
+        "category": "fatherhood",
+        "question": "How do I raise a strong son?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_45",
+        "category": "fatherhood",
+        "question": "How do I break generational cycles of dysfunction?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_46",
+        "category": "fatherhood",
+        "question": "How do I activate my \"Dad Brain\" through consistent presence?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_47",
+        "category": "fatherhood",
+        "question": "What is the difference between \"Shared Caring\" and just being a \"Visitor\"?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_48",
+        "category": "fatherhood",
+        "question": "Why is roughhousing with my children essential for their emotional growth?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_49",
+        "category": "fatherhood",
+        "question": "How do I lead a family when I didn't have a leader myself?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_50",
+        "category": "alpha",
+        "question": "What does it mean to be an alpha male?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_51",
+        "category": "alpha",
+        "question": "How do I build a masculine frame?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_52",
+        "category": "alpha",
+        "question": "How do I become a high-value man?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_53",
+        "category": "alpha",
+        "question": "How do I build confidence?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_54",
+        "category": "alpha",
+        "question": "What is the difference between an alpha male and a beta male?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_55",
+        "category": "alpha",
+        "question": "How do I get my confidence back after a setback?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_56",
+        "category": "alpha",
+        "question": "How do I build an \"Abundance Mindset\" in my career?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_57",
+        "category": "alpha",
+        "question": "How do I know if a \"Scarcity Mindset\" is holding me back?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_58",
+        "category": "alpha",
+        "question": "Why do I need to move from \"Muscle\" to \"Mental\" in today's economy?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_59",
+        "category": "alpha",
+        "question": "How do I maintain an alpha frame when I am under extreme pressure?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_60",
+        "category": "attraction",
+        "question": "How do I attract women?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_61",
+        "category": "attraction",
+        "question": "How do I approach a woman I'm attracted to?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_62",
+        "category": "attraction",
+        "question": "How do I develop my swagger and charisma?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_63",
+        "category": "attraction",
+        "question": "How do I become more sexually attractive?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_64",
+        "category": "attraction",
+        "question": "Why do compliments often kill a woman's attraction to me?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_65",
+        "category": "attraction",
+        "question": "What happens when I am direct about my romantic intentions?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_66",
+        "category": "attraction",
+        "question": "Why is status the ultimate aphrodisiac?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_67",
+        "category": "dating",
+        "question": "Women test me constantly; how do I pass the tests?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_68",
+        "category": "dating",
+        "question": "She ghosted me; what do I do?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_69",
+        "category": "dating",
+        "question": "How do I stop being needy with women?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_70",
+        "category": "dating",
+        "question": "How do I get a woman's number?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_71",
+        "category": "dating",
+        "question": "She is sending mixed signals; what does it mean?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_72",
+        "category": "dating",
+        "question": "How do I get out of the friend zone?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_73",
+        "category": "dating",
+        "question": "Why should I stick to \"cheap dates\" as a high-value man?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_74",
+        "category": "dating",
+        "question": "How do I handle the \"Ex-boyfriend\" conversation without losing my frame?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_75",
+        "category": "dating",
+        "question": "Why must I place a high value on my non-sexual attention?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_76",
+        "category": "dating",
+        "question": "How do I handle a woman who tries to control my schedule?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_77",
+        "category": "breakups",
+        "question": "She broke up with me; how do I handle it?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_78",
+        "category": "breakups",
+        "question": "She came back after leaving; should I take her back?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_79",
+        "category": "breakups",
+        "question": "I think she is cheating; what are the signs?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_80",
+        "category": "breakups",
+        "question": "How do I get over a woman I loved?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_81",
+        "category": "breakups",
+        "question": "She broke up with me but still contacts me; what does it mean?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_82",
+        "category": "breakups",
+        "question": "How do I know if she really loves me or is using me?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_83",
+        "category": "breakups",
+        "question": "She only sees me as a provider; how do I change that?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_84",
+        "category": "breakups",
+        "question": "Why do men often suffer longer than women after a breakup?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_85",
+        "category": "breakups",
+        "question": "How do I master the art of being alone so I'm never desperate?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_86",
+        "category": "breakups",
+        "question": "How do I handle it when she realizes I'm no longer just a \"survival tool\"?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_87",
+        "category": "breakups",
+        "question": "Why is \"no contact\" the only option after a betrayal?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_88",
+        "category": "breakups",
+        "question": "How do I rebuild my life after a devastating divorce?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_89",
+        "category": "relationships",
+        "question": "Why does my wife or girlfriend not want to have sex with me?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_90",
+        "category": "relationships",
+        "question": "Why do women lose respect for men?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_91",
+        "category": "relationships",
+        "question": "How do I know when to commit to a woman?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_92",
+        "category": "relationships",
+        "question": "How do I maintain attraction in a long-term relationship?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_93",
+        "category": "relationships",
+        "question": "She is too controlling; how do I handle it?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_94",
+        "category": "relationships",
+        "question": "Should I get married?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_95",
+        "category": "relationships",
+        "question": "How do I spot female manipulation before it ruins me?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_96",
+        "category": "relationships",
+        "question": "Why is my leadership essential for the health of my relationship?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_97",
+        "category": "relationships",
+        "question": "How do I handle a woman who weaponizes sex in a relationship?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_98",
+        "category": "relationships",
+        "question": "What do I do if my woman has a higher status than me?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_99",
+        "category": "social",
+        "question": "Women don't respect me; what am I doing wrong?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_100",
+        "category": "social",
+        "question": "I have no friends or social life; I feel lonely.",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_101",
+        "category": "social",
+        "question": "I am socially anxious; how do I fix it?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_102",
+        "category": "social",
+        "question": "How do I deal with loneliness long-term?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_103",
+        "category": "social",
+        "question": "How do I gain respect from other men?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_104",
+        "category": "social",
+        "question": "How do I stop caring what people think of me?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_105",
+        "category": "social",
+        "question": "How do I build a social circle that operates on \"Abundance\"?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_106",
+        "category": "social",
+        "question": "How do I escape the \"Social Bribes\" that keep me average?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_107",
+        "category": "sacrifice",
+        "question": "I feel like I sacrifice everything and get nothing in return.",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_108",
+        "category": "sacrifice",
+        "question": "How do I handle disrespect without losing my calm?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_109",
+        "category": "sacrifice",
+        "question": "How do I deal with people who take advantage of me?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_110",
+        "category": "sacrifice",
+        "question": "How do I access the King archetype to lead my life?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_111",
+        "category": "sacrifice",
+        "question": "How do I balance my Warrior energy so I'm not self-destructive?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_112",
+        "category": "finance",
+        "question": "How do I become financially independent?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_113",
+        "category": "finance",
+        "question": "What is the difference between an asset and a liability?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_114",
+        "category": "finance",
+        "question": "How do I adopt the mindset of a \"Millionaire Next Door\"?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_115",
+        "category": "finance",
+        "question": "How do I build enough \"FU Money\" to be free?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    },
+    {
+        "id": "gen_116",
+        "category": "finance",
+        "question": "How do I make Emotional Intelligence my new masculine mission?",
+        "truth": "The Truth is being processed...",
+        "insight": "Deep Insight is being processed...",
+        "action": [
+            "Audit situation.",
+            "Identify obstacle.",
+            "Take action.",
+            "Remove distraction.",
+            "Review mission."
+        ],
+        "solution": "The full solution involves a total re-ordering of your realm.",
+        "biblical": "Proverbs 27:17 - 'Iron sharpens iron...'",
+        "book1": "https://www.amazon.com/Boy-Crisis-Sons-Failing-About/dp/1942952716",
+        "book2": "https://www.amazon.com/No-More-Mr-Nice-Guy/dp/0762415339",
+        "yt1": "https://www.youtube.com/@AlphaMaleStrategiesAMS",
+        "yt2": "https://www.youtube.com/@PlayingWithFire"
+    }
 ];
 
 export const POPULAR_QUESTIONS = [
     "I feel lost. I have no direction in life.",
-    "What does it mean to be an alpha male?",
-    "How do I attract women?",
-    "She ghosted me. What do I do?",
-    "She broke up with me. How do I handle it?",
-    "I feel depressed and hopeless.",
-    "How do I become financially independent?",
-    "I grew up without a father. How does that affect me?",
-    "Women don't respect me. What am I doing wrong?",
+    "Why do women immediately say 'I have a boyfriend' when I approach?",
     "How do I build a masculine frame?",
+    "She ghosted me; what do I do?",
+    "How do I find my purpose in life?",
+    "How do I stop being needy with women?",
+    "What does it mean to be an alpha male?",
+    "How do I build confidence?",
+    "Why should I never give a woman a compliment in the first 5 minutes?",
+    "How do I escape the 'Friend Zone' immediately?"
 ];

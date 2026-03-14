@@ -20,6 +20,7 @@
         <nav id="global-nav" class="global-nav hidden">
             <button class="nav-btn active" data-screen="popular" id="nav-topics">TOPICS</button>
             <button class="nav-btn" data-screen="chat" id="nav-ask">ASK AI</button>
+            <button class="nav-btn" data-screen="books" id="nav-books">BOOKS</button>
             <button class="nav-btn" data-screen="assessment" id="nav-assess">MY SCORE</button>
         </nav>
 
@@ -92,12 +93,35 @@
                     <div class="answer-panel">
                         <p class="answer-label">THE TRUTH</p>
                         <p id="ans-truth" class="ans-truth"></p>
+
                         <p class="answer-label insight-label">DEEP INSIGHT</p>
                         <p id="ans-insight" class="ans-body"></p>
+
                         <p class="answer-label action-label">IMMEDIATE ACTION</p>
-                        <p id="ans-action" class="ans-body"></p>
+                        <div id="ans-action-list" class="ans-action-list"></div>
+
                         <p class="answer-label solution-label">FULL SOLUTION</p>
                         <p id="ans-solution" class="ans-body"></p>
+
+                        <!-- Biblical View Collapsible -->
+                        <div class="biblical-container">
+                            <button id="toggle-biblical" class="btn-biblical">
+                                <span>📖 BIBLICAL VIEW</span>
+                                <span class="toggle-icon">▾</span>
+                            </button>
+                            <div id="biblical-content" class="biblical-content hidden">
+                                <p id="ans-biblical" class="ans-biblical"></p>
+                            </div>
+                        </div>
+
+                        <!-- Resource Links -->
+                        <div class="resources-container">
+                            <p class="answer-label resources-label">RESOURCES & TOOLS</p>
+                            <div id="resource-links" class="resource-links">
+                                <!-- Links injected here -->
+                            </div>
+                        </div>
+
                         <p id="ans-audit" class="ans-audit"></p>
                     </div>
 
@@ -110,6 +134,19 @@
                     <div class="answer-actions">
                         <button id="share-popular-answer" class="btn-share-big">SHARE THE TRUTH</button>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── SCREEN 5: BOOK LIST ─────────────────────────────────────── -->
+        <section id="books" class="screen">
+            <div class="container">
+                <div class="popular-header">
+                    <h2>THE ALPHA LIBRARY</h2>
+                    <p class="subtitle">FOUNDATIONAL RESOURCES FOR THE MISSION</p>
+                </div>
+                <div id="book-list-container" class="book-list-container">
+                    <!-- Categories and books injected here -->
                 </div>
             </div>
         </section>

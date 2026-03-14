@@ -879,3 +879,198 @@ input[type="number"]::-webkit-inner-spin-button {
 ::-webkit-scrollbar-thumb {
     background: var(--gunmetal-border);
 }
+
+/* ── BIBLICAL VIEW ────────────────────────────────────────────── */
+.biblical-container {
+    margin-top: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(212, 175, 55, 0.05);
+}
+
+.btn-biblical {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(212, 175, 55, 0.1);
+    border: none;
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: var(--font);
+}
+
+.btn-biblical:hover {
+    background: rgba(212, 175, 55, 0.2);
+}
+
+.biblical-content {
+    padding: 15px;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.biblical-content.hidden {
+    display: none;
+}
+
+.ans-biblical {
+    font-style: italic;
+    color: var(--white);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ── RESOURCES ────────────────────────────────────────────────── */
+.resources-container {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--gunmetal-border);
+}
+
+.resource-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.resource-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--gunmetal-border);
+    border-radius: 6px;
+    color: var(--gunmetal);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.resource-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--gold);
+    color: var(--white);
+}
+
+.resource-link.yt {
+    border-color: rgba(255, 0, 0, 0.2);
+}
+
+.resource-link.yt:hover {
+    background: rgba(255, 0, 0, 0.05);
+    border-color: #ff0000;
+}
+
+/* ── BOOK LIST SCREEN ─────────────────────────────────────────── */
+.book-list-container {
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.book-category h3 {
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.book-category-desc {
+    color: var(--gunmetal);
+    font-size: 0.8rem;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.book-card {
+    background: #050505;
+    border: 1px solid var(--gunmetal-border);
+    padding: 1.25rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.book-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+}
+
+.book-title {
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+    display: block;
+}
+
+.book-author {
+    color: var(--gunmetal);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ── ACTION LIST ─────────────────────────────────────────────── */
+.ans-action-list {
+    margin: 0.5rem 0 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+.action-item {
+    display: flex;
+    gap: 0.75rem;
+    color: var(--gunmetal);
+    line-height: 1.5;
+    font-size: 0.88rem;
+}
+
+.action-item::before {
+    content: "⚡";
+    color: var(--gold);
+    font-weight: 900;
+    flex-shrink: 0;
+}
+
+/* ── PURE RIZZ SECTION ───────────────────────────────────────── */
+.rizz-section-header {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.1), transparent);
+    border-left: 4px solid #ff0000;
+}
+
+.rizz-section-header h2 {
+    color: #ff0000;
+    margin: 0;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+.rizz-card {
+    border-color: rgba(255, 0, 0, 0.2) !important;
+}
+
+.rizz-card:hover {
+    border-color: #ff0000 !important;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+}
